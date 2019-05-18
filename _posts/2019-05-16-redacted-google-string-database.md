@@ -12,7 +12,7 @@ My collection of strings to enhance google results.  Google is obviously an extr
 Basically, the whole idea here is to start with something simple and continue to add to it in order to narrow the search results down to what you might otherwise not find.
 
 To begin, I start with the **intitle** operator with a keyword and add one keyword with the **+** operator. 
-```code
+```
 intitle:”network security” + news
 ```
 
