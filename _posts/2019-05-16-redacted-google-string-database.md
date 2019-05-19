@@ -34,7 +34,7 @@ Now, with this search string we can add keywords and filetypes to look for very 
 inurl:edu intitle:"index of" -inurl:htm -inurl:html inurl:mp3 
 ```
 
-The key is to be creative and know what you are looking for.  However, please keep in mind the power of google and be respectful of how you use it.  Happying dorking!
+The key is to be creative and know what you are looking for.  However, please keep in mind the power of google and be respectful of how you use it.  Happy dorking!
 
 
 
