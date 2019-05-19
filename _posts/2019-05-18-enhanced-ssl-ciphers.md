@@ -35,7 +35,7 @@ We can use **groups** to narrow down what I want. With the **+** sign, I can tie
 Keep in mind that if we only select the strongest suite, I suppose some clients that aren't up to date may face some issues. This is your call to follow the strong suites with weaker ones. For example, I'm going to jump over to my Nagios server to finish the task of using more enhanced ciphers, and we can see that I'm going to put in order the ciphers I want to use and basically not use any weak ones.
 
 ##### Available Ciphers on RHEL6
-![availableCiphers](/image/nagiosCiphers.png)
+![availableCiphers](/images/nagiosCiphers.png)
 
 This config still gives me a lot of ciphers to work with.  Let us set the config to reflect the new suites we want for our SSL connections.  Basically take the search groups we used and find the line for **SSLCipherSuite** in your website conf file.
 
