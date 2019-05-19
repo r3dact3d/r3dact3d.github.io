@@ -7,12 +7,12 @@ date: 2019-05-18 13:34:00
 categories: security redhat tech tutorials
 ---
 
-If your site or service has any interaction with customer data, especially credit cards, then you will want to ensure that you are using the latest up-to-date SSL cyphers. Below are some quick notes that I took while recently updating some cyphers I'm responsible for. A lot of credit goes to Ivan Ristic as I did spend time reading thru his OpenSSL Cookbook. This post will not cover creating or converting SSL keys, but focus more of the cipher suite and how to change to increase security.
+If your site or service has any interaction with customer data, especially credit cards, then you will want to ensure that you are using the latest up-to-date SSL ciphers. Below are some quick notes that I took while recently updating some ciphers I'm responsible for. A lot of credit goes to Ivan Ristic as I did spend time reading thru his OpenSSL Cookbook. This post will not cover creating or converting SSL keys, but focus more of the cipher suite and how to change to increase security.
 
 ##### Find out current complete version info
 ![opensslVersionA](/images/openSSL_versionA.png)
 
-##### Notice the **OPENSSLDIR** line near the end of the output, that is where my openSSL working directory is located.
+Notice the **OPENSSLDIR** line near the end of the output, that is where my openSSL working directory is located.
 ![SSLdirStruct](/images/SSLdirStruct.png)
 
 Here are a couple hints on getting some help outside of obviously using the man page, but it can be a little overwhelming if you are not sure just where to go next.  On my RHEL6 and newer servers I can get some clues on sub-commands just by typing **openssl** at the command line and hitting tab button twice.
@@ -35,12 +35,14 @@ We can use **groups** to narrow down what I want. With the **+** sign, I can tie
 Keep in mind that if we only select the strongest suite, I suppose some clients that aren't up to date may face some issues. This is your call to follow the strong suites with weaker ones. For example, I'm going to jump over to my Nagios server to finish the task of using more enhanced ciphers, and we can see that I'm going to put in order the ciphers I want to use and basically not use any weak ones.
 
 ##### Available Ciphers on RHEL6
-![availableCiphers](/image/nagiosCiphers)
+![availableCiphers](/image/nagiosCiphers.png)
 
 This config still gives me a lot of ciphers to work with.  Let us set the config to reflect the new suites we want for our SSL connections.  Basically take the search groups we used and find the line for **SSLCipherSuite** in your website conf file.
 
 ##### Cipher Config
-![cipherConf](/images/cipherConf)
+![cipherConf](/images/cipherConf.png)
+
+[Red Hat]()
 
 
 
