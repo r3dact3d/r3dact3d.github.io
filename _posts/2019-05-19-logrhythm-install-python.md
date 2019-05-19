@@ -7,7 +7,7 @@ date: 2019-05-19 15:14:00
 categories: python tech 
 ---
 
-![LogRhythm](https://logrhythm.com)... am I talking about another program to remotely forward my syslog logs? Basically, yes. Their demo states "end user behavior can be difficult to baseline and monitor" and they claim to pretty much do just that. Anyhow, I am sharing my python script that I wrote to check if LogRhythm is already installed on my servers and if not installed, it will install and configure it.  You can get the whole script from my ![repository](https://github.com/r3dact3d/logRhythm) on github.  You will need to get the actual Linux or Solaris install packages from LogRhythm, my script is only to help when needing to install or check installation in a large environment.
+[LogRhythm](https://logrhythm.com)... am I talking about another program to remotely forward my syslog logs? Basically, yes. Their demo states "end user behavior can be difficult to baseline and monitor" and they claim to pretty much do just that. Anyhow, I am sharing my python script that I wrote to check if LogRhythm is already installed on my servers and if not installed, it will install and configure it.  You can get the whole script from my [repository](https://github.com/r3dact3d/logRhythm) on github.  You will need to get the actual Linux or Solaris install packages from LogRhythm, my script is only to help when needing to install or check installation in a large environment.
 
  ##### This Script will do the following logic:
  1.  Get OS version, hostname, ip address, architect and use the agent install **pkg**.
@@ -49,6 +49,6 @@ def cleanup():
 
 ***YOU WILL ALSO*** -> need to update your own mediator in a coupld spots, search for data variable and mediator variable.
 
-Please open ![Issues](https://github.com/r3dact3d/logRhythm/issues) if you have any.
+Please open [Issues](https://github.com/r3dact3d/logRhythm/issues) if you have any.
 
 - Brady
