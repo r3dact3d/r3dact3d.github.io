@@ -9,15 +9,15 @@ categories: python tech
 
 [LogRhythm](https://logrhythm.com)... am I talking about another program to remotely forward my syslog logs? Basically, yes. Their demo states "end user behavior can be difficult to baseline and monitor" and they claim to pretty much do just that. Anyhow, I am sharing my python script that I wrote to check if LogRhythm is already installed on my servers and if not installed, it will install and configure it.  You can get the whole script from my [repository](https://github.com/r3dact3d/logRhythm) on github.  You will need to get the actual Linux or Solaris install packages from LogRhythm, my script is only to help when needing to install or check installation in a large environment.
 
- ##### This Script will do the following logic:
- 1.  Get OS version, hostname, ip address, architect and use the agent install **pkg**.
- 2.  If **pkg** is not installed it will install it and start it
- 3.  If syslog or rsyslog is not configured it will config it
- 4.  If scsm.ini is incomplete or missing it will fix it < best to double check correct ip is used if multiple interfaces exists...ie data and mgmt
- 5.  Validate all is good and clean up after done.
+##### This Script will do the following logic:
+1.  Get OS version, hostname, ip address, architect and use the agent install **pkg**.
+2.  If **pkg** is not installed it will install it and start it
+3.  If syslog or rsyslog is not configured it will config it
+4.  If scsm.ini is incomplete or missing it will fix it < best to double check correct ip is used if multiple interfaces exists...ie data and mgmt
+5.  Validate all is good and clean up after done.
 
- ##### Some troubleshooting steps
- * Check route to Mediator, sometimes port 443 is blocked.
+##### Some troubleshooting steps
+* Check route to Mediator, sometimes port 443 is blocked.
 
 ##### This will be missing the actual linux rpms and solaris tars, but listed below are what this script will support:
 * rhel-scsm-7.1.6.8004-1.el6.x86_64.rpm
