@@ -1,14 +1,14 @@
 ---
 layout: page
-title: About
+title: Where Technology Meets Zen
 permalink: /about/
 ---
 
+Welcome, this blog has posts about Security, Linux, and documentation of tutorials, scripts, and white papers that I create. I am also a <a href="https://access.redhat.com/accelerators" target="_blank"> 2019 Red Hat Accelerator!</a>
 
-## Brady Thompson
-<p>
-    Welcome, this blog has posts about Security, Linux, and documentation of tutorials, scripts, and white papers that I create. I am also a <a href="https://access.redhat.com/accelerators" target="_blank"> 2019 Red Hat Accelerator!</a>
-</p>
+[2019 Red Hat Accelerator](https://access.redhat.com/accelerators)
+
+![Zen Rocks](/images/zenRocks.png)
 
 <p>
     Currently I am a Sr. Linux Administrator for an international company in the hospitality industry. I am an Open-Source Advocate, active in my local community and often found at different Meetups and LUGs.
@@ -18,6 +18,8 @@ permalink: /about/
 <p>
     <img src="/images/image1.png" width="250" height="250" />
 </p>
+
+![Red Hat Accelerators](/images/image1.png)
 
 [//]: # (### More Information)
 
