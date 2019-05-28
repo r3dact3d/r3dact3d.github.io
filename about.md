@@ -4,21 +4,18 @@ title: Where Technology Meets Zen
 permalink: /about/
 ---
 
-Welcome, this blog has posts about Security, Linux, and documentation of tutorials, scripts, and white papers that I create. I am also a <a href="https://access.redhat.com/accelerators" target="_blank"> 2019 Red Hat Accelerator!</a>
-
-[2019 Red Hat Accelerator](https://access.redhat.com/accelerators)
+Welcome, I blog about  all things Linux, security, and share my tutorials, scripts, and white papers.  I use this media to store little projects that are interesting to me and the stuff I think would be an interest to others.  If you are an advocate for Open Source or utilize Open Source projects for work or fun, then you may find something here for you!
 
 ![Zen Rocks](/images/zenRocks.png)
 
-<p>
-    Currently I am a Sr. Linux Administrator for an international company in the hospitality industry. I am an Open-Source Advocate, active in my local community and often found at different Meetups and LUGs.
-</p>
+Currently I am a Sr. Linux Administrator for an international company in the hospitality industry.  I am an advocate for open software and sharing, active in my local community and often found at different Meetups and LUGs.  I am also a [2019 Red Hat Accelerator](https://access.redhat.com/accelerators)
+
+![zenDesk](/images/zenDesk.png)
+
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/r3dact3d" aria-label="Follow @r3dact3d on GitHub">Follow @r3dact3d</a>
 
 ### Certifications / Professional Groups
-<p>
-    <img src="/images/image1.png" width="250" height="250" />
-</p>
-
 ![Red Hat Accelerators](/images/image1.png)
 
 [//]: # (### More Information)
