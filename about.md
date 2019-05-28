@@ -12,9 +12,6 @@ Currently I am a Sr. Linux Administrator for an international company in the hos
 
 ![zenDesk](/images/zenDesk.png)
 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/r3dact3d" aria-label="Follow @r3dact3d on GitHub">Follow @r3dact3d</a>
-
 ### Certifications / Professional Groups
 ![Red Hat Accelerators](/images/image1.png)
 
@@ -23,3 +20,7 @@ Currently I am a Sr. Linux Administrator for an international company in the hos
 [//]: # (A place to include any other types of information that you'd like to include about yourself.)
 
 **This blog, its content and opinions are my own, and do not reflect the opinions of my employeer, or the companies that I blog about.**
+
+Follow me on GitHub to get notifications of new posts!
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/r3dact3d" aria-label="Follow @r3dact3d on GitHub">Follow @r3dact3d</a>
