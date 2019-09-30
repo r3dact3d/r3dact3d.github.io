@@ -8,7 +8,7 @@ Welcome, I blog about  all things Linux, security, and share my tutorials, scrip
 
 ![Zen Rocks](/images/zenRocks.png)
 
-Currently I am a Sr. Linux Administrator for an international company in the hospitality industry.  I am an advocate for open software and sharing, active in my local community and often found at different Meetups and LUGs.  I am also a [2019 Red Hat Accelerator](https://access.redhat.com/accelerators)
+Currently I am a Sr. Red Hat Consultant for Crossvale a Red Hat Premium Partner.  I am an advocate for open software and sharing, active in my local community and often found at different Meetups and LUGs.  I am also a [2019 Red Hat Accelerator](https://access.redhat.com/accelerators) and an [Red Hat Enable SysAdmin Contributor](https://www.redhat.com/sysadmin/).
 
 ![zenDesk](/images/zenDesk.png)
 
