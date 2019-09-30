@@ -19,7 +19,7 @@ To get this plan in motion, I decided to create a new repository named CallForSp
 
 The Cloudformation template is also pretty straight forward.  It defines the basic resources that are needed for most Lambda functions, except instead of a Lambda resource, I define a Serverless Function resource also referred to as SAM.  Along with the SAM, it has the following resources defined - Role and Policy, Events Rule, and Invoke Permission.  The main thing to note here, is that the Policy and Role is defined, in order to give the function permissions to read from the SSM Parameter Store and access to Cloudwatch.  It needs read access to the SSM Parameter Store.
 
-###AWS Credentials
+### AWS Credentials
 
 Another requirement when working with AWS services is the need for an IAM User or Role with permissions to access the AWS services being leveraged.  In my case, I have an IAM User with Access keys that needs to be stored both securely and somewhere that can be used on the fly so that this process can stay truly automated.  Here, I used GitHub Secrets to store my AWS credentials, so the are both encrypted and not visible in my code and I can call these secrets from the code.  You can learn more about GitHub Secrets on their blog [here](https://github.blog/2011-10-21-github-secrets/).
 
