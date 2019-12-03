@@ -7,11 +7,11 @@ date: 2019-12-03 12:30:00
 categories: redhat satellite automation tech 
 ---
 
-Recently, I have been working with Red Hat's system mangement solution, a product called Satellite.  If you want more information on what Satellite is or what it can do for you and your organization, please read Crossvale's [data sheet.](https://crossvale.com/satellite/)  However, the purpose of this post is to document the process I used to automate the publishing Content Views and then automate the promotion of those Content View versions to the first step in the Lifecycle Environment path. When a product offers, not only a web browser interface(GUI), but also a CLI and API for installation, cofiguration, and mangement tasks, the possiblilities are endless to what solutions can be achieved.
+Recently, I have been working with Red Hat's system mangement solution, a product called Satellite.  If you want more information on what Satellite is or what it can do for you and your organization, please read Crossvale's [data sheet.](https://crossvale.com/satellite/)  However, the purpose of this post is to document the process I used to automate the publishing of Content Views and then automate the promotion of those Content View versions to the first step in the Lifecycle Environment path. When a product offers, not only a web browser interface(GUI), but also a CLI and API for installation, cofiguration, and mangement tasks, the possiblilities are endless to what solutions can be achieved.
 
 ### The Problem
 
-After the installation of Satellite and updon completing the basic configurations needed, I am left with a simple setup and starting point.  I have multiple Red Hat repositories being synced on a daily basis.  I have a Content View that includes all these repositories and a Lifecycle Environment that goes from Lab > Dev > Stage > Prod.  The problem is that the GUI does not have an option to automatically set a Publish date for the Content View.  So in short terms, even though my repositories are syncing daily, my Content View doesn't see the new packages until I manually Publish a new version of the Content View.  The next manual step to Promote the newly created version to the first environmnet in my Lifecycle path, **lab**, is also needed before any servers in that environment can see or install the new packages.
+After the installation of Satellite and upon completing the basic configurations needed, I am left with a simple setup and starting point.  I have multiple Red Hat repositories being synced on a daily basis.  I have a Content View that includes all these repositories and a Lifecycle Environment that goes from Lab > Dev > Stage > Prod.  The problem is that the GUI does not have an option to automatically set a Publish date for the Content View.  So in short terms, even though my repositories are syncing daily, my Content View doesn't see the new packages until I manually Publish a new version of the Content View.  The next manual step to Promote the newly created version to the first environmnet in my Lifecycle path, **lab**, is also needed before any servers in that environment can see or install the new packages.
 
 ### The Idea
 
@@ -19,7 +19,10 @@ It makes sense for me to publish a new version of my Content View on the first d
 
 ### The Hammer
 
+---
 ![The Hammer](/images/hammerInfo.png)
+SOURCE: https://access.redhat.com/documentation/en-us/red_hat_satellite/6.6/html/hammer_cli_guide/index
+---
 
 The first piece of information I need for this automation to work is the Content View **ID**.  I am also going to wrtie this script so that it will continue to work as more Content Views get created.  So this first line will __list__ all the Content Views and extract just the IDs and put them into a Variable called **CV_IDS**.
 ```bash
