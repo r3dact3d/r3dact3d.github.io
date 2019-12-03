@@ -21,10 +21,11 @@ It makes sense for me to publish a new version of my Content View on the first d
 
 ---
 ![The Hammer](/images/hammerInfo.png)
-SOURCE: https://access.redhat.com/documentation/en-us/red_hat_satellite/6.6/html/hammer_cli_guide/index
+**source:** https://access.redhat.com/documentation/en-us/red_hat_satellite/6.6/html/hammer_cli_guide/index
+
 ---
 
-The first piece of information I need for this automation to work is the Content View **ID**.  I am also going to wrtie this script so that it will continue to work as more Content Views get created.  So this first line will __list__ all the Content Views and extract just the IDs and put them into a Variable called **CV_IDS**.
+The first piece of information I need for this automation to work is the Content View **ID**.  I am also going to write this script so that it will continue to work as more Content Views get created.  So this first line will __list__ all the Content Views and extract just the IDs and put them into a Variable called **CV_IDS**.
 ```bash
 CV_IDS=$(hammer --no-headers --csv content-view list | grep -v Default | cut -d, -f1)
 ```
@@ -45,14 +46,14 @@ The next command will create a new variable that holds the newly published Conte
     VERSION_ID=$(hammer --no-headers --csv content-view version list --content-view-id $ID | head -1 | cut -d, -f1)
 ```
 
-Armed with the new VERSION_ID, the last command run in the **do** section will promote the new version of the Content View to the __lab__ Lifecycle Environment.  The only thing that needs to be tweaked in this script is the __--org__ argument in this command to match your specific organization.  This argument could be generated automatically, much like the other arguments, but most of the time that is a static organization as most companies only have one org set.  If you need help with setting the org or have multiple orgs and would like help automating that argument, please reach out to me [here](redactedtech@gmail.com).
+Armed with the new VERSION_ID, the last command run in the **do** section will promote the new version of the Content View to the __lab__ Lifecycle Environment.  The only thing that needs to be tweaked in this script is the __--org__ argument in this command to match your specific organization.  This argument could be generated automatically, much like the other arguments, but most of the time that is a static organization as most companies only have one org set.  If you need help with setting the org or have multiple orgs and would like help automating that argument, please reach out to me <mailto:redactedtech@gmail.com>.
 ```bash
     hammer content-view version promote --org r3dact3d --content-view-id $ID --id $VERSION_ID --to-lifecycle-environment lab
 ```
 
 ### Putting It All Together
 
-The final verson of this script should come togethr like this.  It is important to note here, that the more Content Views there are, the longer this script will take to run.  The commands do not run in sync and they wait for the previous command to finish before starting the next command.  Publishing and promoting each take sometime several minutes to complete.  If there is interest in working with me to devbelop an **asynchronous** automated approach, please reach out to me [here](redactedtech@gmail.com)
+The final verson of this script should come togethr like this.  It is important to note here, that the more Content Views there are, the longer this script will take to run.  The commands do not run in sync and they wait for the previous command to finish before starting the next command.  Publishing and promoting can sometimes take several minutes to complete.  If there is interest in working with me to develop an **asynchronous** automated approach, please reach out to me <mailto:redactedtech@gmail.com>.
 ```bash
 CV_IDS=$(hammer --no-headers --csv content-view list | grep -v Default | cut -d, -f1)
 for ID in CV_IDs
