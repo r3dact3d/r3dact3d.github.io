@@ -53,7 +53,7 @@ Armed with the new VERSION_ID, the last command run in the **do** section will p
 
 ### Putting It All Together
 
-The final verson of this script should come togethr like this.  It is important to note here, that the more Content Views there are, the longer this script will take to run.  The commands do not run in sync and they wait for the previous command to finish before starting the next command.  Publishing and promoting each take sometime several minutes to complete.  If there is interest in working with me to devbelop an **asynchronous** automated approach, please reach out to me <mailto:redactedtech@gmail.com>.
+The final verson of this script should come togethr like this.  It is important to note here, that the more Content Views there are, the longer this script will take to run.  The commands do not run in sync and they wait for the previous command to finish before starting the next command.  Publishing and promoting can sometimes take several minutes to complete.  If there is interest in working with me to develop an **asynchronous** automated approach, please reach out to me <mailto:redactedtech@gmail.com>.
 ```bash
 CV_IDS=$(hammer --no-headers --csv content-view list | grep -v Default | cut -d, -f1)
 for ID in CV_IDs
