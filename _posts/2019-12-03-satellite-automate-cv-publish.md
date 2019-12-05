@@ -38,7 +38,7 @@ do
 
 I'll go thru each of the next three commands or lines in the script, as these are the meat of the automation.  The below line is going to publish the Content View of the ID extracted above and also set a description of the current date, so that from the GUI or web browser, we can easily see when this version was published.
 ```bash
-    hammer content-view publish --id $ID --description $(/bin/date "+%Y-%m-#d")
+    hammer content-view publish --id $ID --description $(/bin/date "+%Y-%m-%d")
 ```
 
 The next command will create a new variable that holds the newly published Content View's version ID. It is important to note that the version ID and the Content View ID are different.  The Content View ID will always stay the same, unless the Content View is deleted and recreated.  As Content Views are created they get an ID that will always stay with it.  The version ID will change as new versions get published.  In any case, the line below will always get the latest version ID of the Content View that we are working with.
@@ -58,7 +58,7 @@ The final verson of this script should come togethr like this.  It is important 
 CV_IDS=$(hammer --no-headers --csv content-view list | grep -v Default | cut -d, -f1)
 for ID in CV_IDs
 do
-    hammer content-view publish --id $ID --description $(/bin/date "+%Y-%m-#d")
+    hammer content-view publish --id $ID --description $(/bin/date "+%Y-%m-%d")
     VERSION_ID=$(hammer --no-headers --csv content-view version list --content-view-id $ID | head -1 | cut -d, -f1)
     hammer content-view version promote --org r3dact3d --content-view-id $ID --id $VERSION_ID --to-lifecycle-environment lab
 done
