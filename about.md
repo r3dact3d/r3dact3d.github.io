@@ -6,11 +6,11 @@ permalink: /about/
 
 Welcome, I blog about  all things Linux, security, and share my tutorials, scripts, and white papers.  I use this media to store little projects that are interesting to me and the stuff I think would be an interest to others.  If you are an advocate for Open Source or utilize Open Source projects for work or fun, then you may find something here for you!
 
-![Zen Rocks](/images/zenRocks.png)
+![Zen Rocks](/assets/images/zenRocks.png)
 
 Currently I am a Sr. Red Hat Consultant for Crossvale a Red Hat Premium Partner.  I am an advocate for open software and sharing, active in my local community and often found at different Meetups and LUGs.  I am also a [2019 Red Hat Accelerator](https://access.redhat.com/accelerators) and a [Red Hat Enable SysAdmin Contributor](https://www.redhat.com/sysadmin/).
 
-![zenDesk](/images/zenDesk.png)
+![zenDesk](/assets/images/zenLake.png)
 
 ### Certifications / Professional Groups
 ![Red Hat Accelerators](/images/image1.png)
