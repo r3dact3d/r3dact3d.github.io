@@ -4,7 +4,7 @@ comments: true
 title: "Python Script to Configure and Install LogRhythm"
 published: true
 date: 2019-05-19 15:14:00
-categories: python tech 
+categories: python tech
 ---
 
 [LogRhythm](https://logrhythm.com)... am I talking about another program to remotely forward my syslog logs? Basically, yes. Their demo states "end user behavior can be difficult to baseline and monitor" and they claim to pretty much do just that. Anyhow, I am sharing my python script that I wrote to check if LogRhythm is already installed on my servers and if not installed, it will install and configure it.  You can get the whole script from my [repository](https://github.com/r3dact3d/logRhythm) on github.  You will need to get the actual Linux or Solaris install packages from LogRhythm, my script is only to help when needing to install or check installation in a large environment.
@@ -21,9 +21,9 @@ categories: python tech
 
 ##### This will be missing the actual linux rpms and solaris tars, but listed below are what this script will support:
 * rhel-scsm-7.1.6.8004-1.el6.x86_64.rpm
-* rhel-scsm-7.1.6.8004-1.el5.i686.rpm    
-* rhel-scsm-7.1.6.8004-1.el5.x86_64.rpm  
-* rhel-scsm-7.1.6.8004-1.el6.i686.rpm    
+* rhel-scsm-7.1.6.8004-1.el5.i686.rpm
+* rhel-scsm-7.1.6.8004-1.el5.x86_64.rpm
+* rhel-scsm-7.1.6.8004-1.el6.i686.rpm
 * solaris9_10_11_sparc.zip
 * solaris9_10_11_scsm7.1.6.8004_sparc.tar
 * solaris10_11_x86.zip
@@ -47,7 +47,7 @@ def cleanup():
         print 'PASS: All evidence removed!'
 ```
 
-***YOU WILL ALSO*** -> need to update your own mediator in a coupld spots, search for data variable and mediator variable.
+***YOU WILL ALSO*** -> need to update your own mediator in a couple spots, search for data variable and mediator variable.
 
 Please open [Issues](https://github.com/r3dact3d/logRhythm/issues) if you have any.
 
