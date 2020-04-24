@@ -4,7 +4,7 @@ title: Where Technology Meets Zen
 permalink: /about/
 ---
 
-Welcome, I blog about  all things Linux, security, and share my tutorials, scripts, and white papers.  I use this media to store little projects that are interesting to me and the stuff I think would be an interest to others.  If you are an advocate for Open Source or utilize Open Source projects for work or fun, then you may find something here for you!
+Welcome, I blog about all things Linux, security, and share my tutorials, scripts, and white papers.  I use this media to store little projects that are interesting to me and the stuff I think would be an interest to others.  If you are an advocate for Open Source or utilize Open Source projects for work or fun, then you may find something here for you!
 
 ![](/assets/images/zenRocks.png)
 
