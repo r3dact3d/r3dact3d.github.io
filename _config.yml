@@ -17,23 +17,27 @@ lang: en-US
 title: wd4rnr
 email: redhatbrady@gmail.com
 description:
-baseurl: # the optional subpath of your site, e.g. "/blog"
+baseurl: /wd4rnr
 url: https://r3dact3d.github.io
 author:
-  name: B. Thompson
-  twitter: 
-  picture:
+  name: Brandon "Brady" Thompson
+  twitter: redactedTech 
+  picture: /assets/images/me.png 
 twitter_username: redactedTech
 github_username: r3dact3d
-logo: # path of site logo, e.g. "/assets/images/logo.png"
-search: # true, false (default)
-search_full_content: false # true, false (default)
+logo: /assets/icons/basically-basic-logo-light.svg
+search: false
+search_full_content: false
 search_provider: # lunr (default), algolia
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
+
+# Liquid
+liquid:
+  error_mode: strict
 
 # Build settings
 markdown: kramdown
