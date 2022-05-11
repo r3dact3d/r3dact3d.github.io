@@ -17,7 +17,7 @@ lang: en-US
 title: wd4rnr
 email: redhatbrady@gmail.com
 description:
-baseurl: /wd4rnr
+baseurl: # /wd4rnr
 url: https://r3dact3d.github.io
 author:
   name: Brandon "Brady" Thompson
@@ -36,8 +36,8 @@ algolia:
   powered_by: # true (default), false
 
 # Liquid
-liquid:
-  error_mode: strict
+#liquid:
+#  error_mode: strict
 
 # Build settings
 markdown: kramdown
@@ -65,7 +65,7 @@ exclude:
   - .sass-cache
   - .scss-lint.yml
   - CHANGELOG
-#  - Gemfile
+  - Gemfile
   - Gemfile.lock
   - LICENSE
   - node_modules
