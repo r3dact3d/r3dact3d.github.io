@@ -3,12 +3,7 @@ title: "About"
 layout: about
 ---
 
-Basically Basic is a [Jekyll theme](https://jekyllrb.com/docs/themes/) meant as a substitute for the default --- [Minima](https://github.com/jekyll/minima). Conventions and features found there are fully supported by **Basically Basic**, with a few enhancements thrown in for good measure:
+I have seen for years the occasional car or truck on the road with the Amateur Radio Operator license plate and usually occompanied by a 'few' antennas to trigger some curiosity.  However, I didn't really become interested in amateur radio until I heard about what others in the off-road and overlanding community are using for communications between vehicles, sometimes miles apart, and how with GMRS the signal quality is so much better.
 
-- Clean responsive design with [six customizable skins](#skin)
-- Curriculum Vitæ/Resume layout powered by [JSON data](http://registry.jsonresume.org/)
-- About page layout
-- Disqus Comments and Google Analytics support
-- SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+  This began my research into upgrading my mobile comms from a citizens band or CB radio to a rather humble mobile amateur radio station wd4rnr-9.  The main deciding factor was APRS and the ability to send beasons automatically providing another method of trackability when in very remote areas with zero cell phone service. Ultimately, also leading to the decision to operate mobile with the Yaesu FTM-400xdr.
 
-You can find the source code for this theme at: {% include icon-github.html username="mmistakes" %}/[jekyll-theme-basically-basic](https://github.com/mmistakes/jekyll-theme-basically-basic)
