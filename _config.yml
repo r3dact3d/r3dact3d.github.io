@@ -9,7 +9,7 @@ baseurl: # "/wd4rnr" # the subpath of your site, e.g. /blog
 url: "https://r3dact3d.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
-video: head.png 
+video: head.jpg 
 banner-title: wd4rnr
 banner-desc: Radio in the Wild
 
