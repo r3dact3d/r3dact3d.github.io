@@ -9,6 +9,6 @@ introduction: |
 
   This began my research into upgrading my mobile comms from a citizens band or CB radio to a rather humble mobile amateur radio station wd4rnr-9.  The main deciding factor was APRS and the ability to send beasons automatically providing another method of trackability when in very remote areas with zero cell phone service. Ultimately, also leading to the decision to operate mobile with the Yaesu FTM-400xdr.
 
-  Join me down this rabiit hole!
+  Join me down this rabit hole!
 
 ---
