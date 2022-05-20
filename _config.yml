@@ -9,9 +9,9 @@ baseurl: # "/wd4rnr" # the subpath of your site, e.g. /blog
 url: "https://r3dact3d.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # add banner title
-banner-desc: # add banner description
+video: head.png 
+banner-title: wd4rnr
+banner-desc: Radio in the Wild
 
 # Author settings
 author-pic: face.jpg
