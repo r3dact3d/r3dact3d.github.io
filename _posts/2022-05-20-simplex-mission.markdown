@@ -1,5 +1,5 @@
 ---
- layout: post-aprs
+ layout: post
  title: "Simplex Mission"
  img: craw_sunset1.png 
  date: 2022-05-20 12:55:00 +0300
