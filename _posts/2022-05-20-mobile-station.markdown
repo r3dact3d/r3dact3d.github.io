@@ -14,10 +14,10 @@ I have seen for years the occasional car or truck on the road with the Amateur R
 This began my research into upgrading my mobile comms from a citizens band or CB radio to a rather humble mobile amateur radio station wd4rnr-9. The main deciding factor was APRS and the ability to send beasons automatically providing another method of trackability when in very remote areas with zero cell phone service. Ultimately, also leading to the decision to operate mobile with the Yaesu FTM-400xdr.
 
 | Station       | wd4rnr-9     | 
-| ------------- |:-------------:|
-| Transceiver   | Yaesu FTM-400xdr |
-| Antenna       | Comet SBB5       |
-| Paired with   | Diamond k400     |
+| --------------- |:-----------------:|
+| Transceiver    |   Yaesu FTM-400xdr |
+| Antenna        | Comet SBB5       |
+| Paired with    | Diamond k400     |
 
 
 Check if I'm operating near you! [WD4RNR-9 on aprs.fi](https://aprs.fi/#!mt=roadmap&z=13&call=a%2FWD4RNR-9&timerange=604800&tail=10800)
