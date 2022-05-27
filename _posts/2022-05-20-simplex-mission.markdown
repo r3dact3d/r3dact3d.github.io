@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simplex Mission"
-img: craw_sunset1.png 
+img: ISS-ant.jpg
 date: 2022-05-20 12:55:00 +0300
 description: Mission outline to contact International Space Station using FM simplex
 tag: [Amateur Radio, APRS, Navigation]
