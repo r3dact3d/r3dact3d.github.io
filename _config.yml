@@ -10,13 +10,13 @@ url: "https://r3dact3d.github.io" # the base hostname & protocol for your site, 
 
 # Banner settings
 video: head.jpg 
-banner-title: wd4rnr
-banner-desc: Radio in the Wild
+banner-title: 
+banner-desc: 
 
 # Author settings
 author-pic: face.jpg
 author-name: "Brandon 'Brady' Thompson"
-about-author: Software consultant and Linux engineer by trade, but also very passionate about the outdoors and promoting the art of amateur radio.
+about-author: Consulting architect and Linux engineer by trade, but also very passionate about the outdoors and promoting the art of amateur radio.
 email: redhatbrady@gmail.com
 phone: (469) 612-4115
 website: https://r3dact3d.github.io
