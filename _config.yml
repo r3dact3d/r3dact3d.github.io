@@ -1,7 +1,7 @@
 remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
 locale: en-US
-logo: # path of site logo
+logo: "/images/me.jpg" # path of site logo
 title: wd4rnr
 description: "The ruminations of an amateur radio operator"
 baseurl: # "/wd4rnr" # the subpath of your site, e.g. /blog
