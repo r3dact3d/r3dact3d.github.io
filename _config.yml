@@ -8,8 +8,9 @@ baseurl: # "/wd4rnr" # the subpath of your site, e.g. /blog
 url: "https://r3dact3d.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
+read_time: true # reading time estimates, e.g. true
 words_per_minute: # 200
+markdown:kramdown
 mathjax:
   enable: true # MathJax equations, e.g. true, false (default)
   combo:  "tex-svg" # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
