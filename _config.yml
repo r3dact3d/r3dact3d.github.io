@@ -32,8 +32,8 @@ twitter:
 google_analytics: # UA-NNNNNNNNN-N
 
 # Paginate
-#paginate: 12
-#paginate_path: /page:num/
+paginate: 12
+paginate_path: /page:num/
 
 search_full_content: false
 
@@ -55,13 +55,13 @@ defaults:
 # Site Author
 author:
   name: "Brady Thompson"
-  picture:
+  picture: "/images/face.jpg"
   email: "redhatbrady@gmail.com"
   twitter: RedactedTech
   links:
-    - title:
-      url:
-      icon:
+    - title: Twitter
+      url: https://twitter.com/RedactedTech
+      icon: fab fa-twitter-square
 
 # Footer Links
 footer_links:
