@@ -1,16 +1,11 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
+Brady Thompson:
+  name: Brady Thompson
   picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+  twitter: "@RedactedTech"
   links:
     - title: Twitter
-      url: https://twitter.com/billyrick
+      url: https://twitter.com/redactedtech
       icon: fab fa-twitter-square
-
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone

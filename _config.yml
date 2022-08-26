@@ -1,10 +1,9 @@
-#theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
 locale: en-US
 logo: # path of site logo
-title: wd4rnr - Radio in the Wild
-description: "The ruminations of an amateur radio operator... a Ham"
+title: wd4rnr
+description: "The ruminations of an amateur radio operator"
 baseurl: # "/wd4rnr" # the subpath of your site, e.g. /blog
 url: "https://r3dact3d.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
