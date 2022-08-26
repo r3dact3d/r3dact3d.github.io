@@ -1,56 +1,71 @@
-logo: wd4rnr
+#theme: jekyll-theme-so-simple
+remote_theme: mmistakes/so-simple-theme
+skin: "/assets/css/skins/default.css"
+locale: en-US
+logo: # path of site logo
 title: wd4rnr - Radio in the Wild
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
+description: > "The ruminations of an amateur radio operator... a Ham"
 baseurl: # "/wd4rnr" # the subpath of your site, e.g. /blog
 url: "https://r3dact3d.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Banner settings
-video: head.jpg 
-banner-title: 
-banner-desc: 
-
-# Author settings
-author-pic: face.jpg
-author-name: "Brandon 'Brady' Thompson"
-about-author: Consulting architect and Linux engineer by trade, but also very passionate about the outdoors and promoting the art of amateur radio.
-email: redhatbrady@gmail.com
-phone: (469) 612-4115
-website: https://r3dact3d.github.io
-
-# Social link
-google_url: https://mail.google.com/chat/u/0/#chat/welcome
-twitter_url: https://twitter.com/RedactedTech
-instagram_url: https://www.instagram.com/wheeldirty.4rnr/
-pinterest_url: # add url link
-dribbble_url:  # add url link
-facebook_url: https://www.facebook.com/brady.thompson.9
+date_format: "%B %-d, %Y"
+read_time: # reading time estimates, e.g. true
+words_per_minute: # 200
+mathjax:
+  enable: # MathJax equations, e.g. true, false (default)
+  combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
+  tags:  # "none", "ams" (default), "all"
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+    
+#about-author: Consulting architect and Linux engineer by trade, but also very passionate about the outdoors and promoting the art of amateur radio.
 
 # Disqus
-discus_identifier: radio-in-the-wild # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
-
-# Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+disqus:
+  shortname: radio-in-the-wild # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+twitter:
+  username: RedactedTech
 
 # Tracker
-analytics:
+google_analytics: # UA-NNNNNNNNN-N
 
 # Paginate
-paginate: 12
-paginate_path: /page:num/
+#paginate: 12
+#paginate_path: /page:num/
 
-# Build settings
-markdown: kramdown
-plugins_dir:
-  - jekyll-paginate
+search_full_content: false
+
+plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
-
-gems:
+  - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap
+# Front Matter Defaults
+defaults:
+  # Posts defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
 
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+# Site Author
+author:
+  name: "Brady Thompson"
+  picture:
+  email: "redhatbrady@gmail.com"
+  twitter: RedactedTech
+  links:
+    - title:
+      url:
+      icon:
+
+# Footer Links
+footer_links:
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
