@@ -1,15 +1,18 @@
 ---
-title: "Simplex Ops: QTH Station"
+title: "DIY: 6 Meter Coax Antenna"
 excerpt_separator: "<!--more-->"
 categories:
   - Amateur Radio
 tags:
   - ham radio
   - simplex
-  - shack
+  - vhf
+  - diy
+  - antenna
 ---
 
-My DIY 6 Meter Coax Antenna
+## My DIY 6 Meter Coax Antenna
+
 Summer 2022 is almost here and I've been hearing about the 'Magic Band' and how 6 meters can be used to make regional contacts as opposed to just local contacts I usually make on 2  meter simplex.  So that means fun in the short term, but long term operating on 6 meters can come in handy during emergency situations.  
 
 I have a TYT TH-9800D Quad band radio that can rx/tx on 6 meters pushing up to 50 watts, all I need now is an antenna.  What I have to work with is 50 feet of RG-58 coax cable and here is how I made my 6 meter antenna using that cable.
