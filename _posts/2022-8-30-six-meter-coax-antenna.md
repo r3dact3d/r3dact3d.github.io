@@ -19,14 +19,14 @@ I have a TYT TH-9800D Quad band radio that can rx/tx on 6 meters pushing up to 5
 
 <!--more-->
 
-Determine total length of half-wave antenna for 50Mhz
+### Determine total length of half-wave antenna for 50Mhz
 This is the formula used to determine how long to make the radiating elements of the antenna: 
 
 Length = 468 / freq Mhz 
 
 So for 50 Mhz, the total length of my antenna will be 9.4 feet when rounding up... longer is better for tuning, because you can always shorten later.  Now converting the feet to inches, we have a total of 112 inches. 
 
-Determine length of wire to unshield
+### Determine length of wire to unshield
 
 ![6meter-coax-wrapped](/images/6meter-coax-wrapped.jpg){: .align-right}
 
@@ -38,7 +38,7 @@ At this point, I measure another 56 inches from the exposed wire and marked my c
 
 ![6meter-coax-mast](/images/6meter-coax-mast.jpg){: .align-left}
 
-Create choke
+### Create choke
 To make this work, I need to make a choke where I placed my tape marking the end/beginning of my antenna.    We need the choke to stop the outside shield current, essentially creating a feedpoint for the antenna. 
 
 For coax with an impedence of 50ohms, I need to create a choke that has an inductance of 200ohms.  This formula will return the nanohenrys we need to determine how many turns we need to create >200ohms inductance.
