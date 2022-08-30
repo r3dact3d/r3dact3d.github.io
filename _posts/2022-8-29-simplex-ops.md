@@ -19,13 +19,15 @@ I'm also able to work from home currently and with gas prices almost $4 a gallon
 
 I decided to research my signal coverage and found Radio Mobile Online by ve2dbe and plugged in my antenna information.
 
-Green is > S4
+The first image attempts to show the areas in green that would have a signal strength of at least S4 when I'm using base station at 25watts and the receiving station has an antenna around 2 meters high, which is average mobile antenna height. 
 
-![qth-vhf](/images/base-25w.png){: .align-right}
+Areas in yellow, especially if outside of the metroplex, may still get great reception at s2 or s3 however, within my neighborhood the noise level is often right at s3
 
-Yellow is weak signal or in the noise floor of DFW with typical conditions
+![qth-vhf](/images/base-25w.png){: .align-center}
 
-![qth-vhf](/images/50w-high-rx.png){: .align-left}
+The second image below shows signal coverage if I transmit at 50watts and the receiving has a raised antenna at least 10 meters high.  Again, in this scenerio the green areas are greater signal strenth at s4 and higher.
+
+![qth-vhf](/images/50w-high-rx.png){: .align-center}
 
 | Station | Transceiver | Antenna |
 |:--------|:-------:|--------:|
