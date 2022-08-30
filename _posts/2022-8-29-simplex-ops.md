@@ -25,13 +25,13 @@ Areas in yellow, especially if outside of the metroplex, may still get great rec
 
 ![qth-vhf](/images/base-25w.png){: .align-center}
 
-The second image below shows signal coverage if I transmit at 50watts and the receiving has a raised antenna at least 10 meters high.  Again, in this scenerio the green areas are greater signal strenth at s4 and higher.
+The second image below shows signal coverage if I transmit at 50watts and the receiving station has a raised antenna at least 10 meters high.  Again, in this scenerio the green areas are greater signal strenth at s4 and higher.
 
 ![qth-vhf](/images/50w-high-rx.png){: .align-center}
 
 | Station | Transceiver | Antenna |
 |:--------|:-------:|--------:|
-| wd4rnr | TYT TH-9800 | Tram 1477 elavated 10 meters  |
+| wd4rnr | TYT TH-9800D | Tram 1477 elavated 10 meters  |
 |=============================|
 
 ![qth-vhf](/images/simplex-base.jpg){: .align-right}
