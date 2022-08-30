@@ -1,5 +1,5 @@
 ---
-title: "Simplex Ops"
+title: "Simplex Ops: QTH Station"
 excerpt_separator: "<!--more-->"
 categories:
   - Amateur Radio
