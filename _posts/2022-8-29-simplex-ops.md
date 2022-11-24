@@ -31,7 +31,7 @@ The second image below shows signal coverage if I transmit at 50watts and the re
 
 | Station | Transceiver | Antenna |
 |:--------|:-------:|--------:|
-| wd4rnr | TYT TH-9800D | Tram 1477 elavated 10 meters  |
+| wd4rnr | TYT TH-9800D | Tram 1477 elevated 10 meters  |
 |=============================|
 
 ![qth-vhf](/images/simplex-base.jpg){: .align-right}
