@@ -45,7 +45,7 @@ const aURL = [
   [
     "2196F3",
     "VHF",
-    "https://vhf.dxview.org",
+    "https://vhf.dxview.org/",
     "1",
   ],
   [
@@ -170,12 +170,12 @@ const aIMG = [
     "https://www.blitzortung.org/en/Images/image_b_tx.png",
   ],
   [
-    "APRS",
-    "https://aprs.fi/#!z=11&call=a%2FW5AWW-4&others=1&timerange=3600&tail=3600",
+    "Hepburn Tropo",
+    "https://www.dxinfocentre.com/tr_map/fcst/car006.png?latest",
   ],
   [
     "",
-    "https://www.youtube.com/embed/cOmmvhDQ2HM?autoplay=1",
+    "https://www.mapability.com/ei8ic/maps/ARRL_RAC_Sections_2023_1254x969.png",
   ],
   [
     "ISS & RS-44 POSITION",
@@ -184,7 +184,7 @@ const aIMG = [
   ],
   [
     "BLANK",
-    "https://www.youtube.com/embed/dfmlbkDv9eo?autoplay=1",
+    "https://www.youtube.com/embed/dfmlbkDv9eo",
   ],
 
   [
