@@ -196,8 +196,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "LV STRIP",
-    "https://www.skylinewebcams.com/en/webcam/united-states/nevada/las-vegas/las-vegas.html",
+    "HOG CREEK",
+    "https://ambientweather.net/devices/public/65fa92cdc595aab3229199dac16cadcf?embed=true",
   ],
 
   [
