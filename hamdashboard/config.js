@@ -176,6 +176,9 @@ const aIMG = [
   [
     "",
     "https://www.mapability.com/ei8ic/maps/ARRL_RAC_Sections_2023_1254x969.png",
+    "https://www.mapability.com/ei8ic/maps/USA_Call_Areas_1652.png",
+    "https://www.mapability.com/ei8ic/maps/CQ_Zones_02.png",
+
   ],
   [
     "ISS & RS-44 POSITION",
@@ -183,8 +186,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "BLANK",
-    "https://www.youtube.com/embed/dfmlbkDv9eo",
+    "PSK",
+    "https://pskreporter.info/pskmap.html?preset&callsign=w5aww&timerange=86400&blankifnone=1&mapCenter=38.831322926667525,-94.73750089830887,4.6750794820546435",
   ],
 
   [
