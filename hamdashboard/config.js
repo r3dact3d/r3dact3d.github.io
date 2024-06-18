@@ -95,7 +95,7 @@ const aURL = [
     "1", 
     "R"
   ],
-  ["2196F3", "Stuff In Space", "https://stuffin.space/", "1"],
+  ["2196F3", "Stuff In Space", "https://stuffin.space/", "1","R"],
   [
     "2196F3",
     "WEATHER",
