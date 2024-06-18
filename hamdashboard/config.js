@@ -77,6 +77,20 @@ const aURL = [
   ],
   [
     "2196F3",
+    "TRAFFIC",
+    "https://drivetexas.org/?ll=-97.3637,31.5485&z=12",
+    "1",
+    "R",
+  ],
+  [
+    "2196F3",
+    "TRAFFIC CAMS",
+    "https://its.txdot.gov/its/District/WAC/cameras",
+    "1",
+    "R",
+  ],
+  [
+    "2196F3",
     "SPACEX",
     "https://www.youtube.com/embed/cOmmvhDQ2HM?autoplay=1",
     "1", 
@@ -170,7 +184,7 @@ const aIMG = [
   ],
   [
     "BLANK",
-    "",
+    "https://www.youtube.com/embed/dfmlbkDv9eo?autoplay=1",
   ],
 
   [
