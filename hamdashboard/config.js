@@ -174,7 +174,7 @@ const aIMG = [
     "https://www.dxinfocentre.com/tr_map/fcst/car006.png?latest",
   ],
   [
-    "",
+    "MAPS",
     "https://www.mapability.com/ei8ic/maps/ARRL_RAC_Sections_2023_1254x969.png",
     "https://www.mapability.com/ei8ic/maps/USA_Call_Areas_1652.png",
     "https://www.mapability.com/ei8ic/maps/CQ_Zones_02.png",
