@@ -170,8 +170,10 @@ const aIMG = [
     "https://www.blitzortung.org/en/Images/image_b_tx.png",
   ],
   [
-    "Hepburn Tropo",
+    "HEPBURN TROPO",
     "https://www.dxinfocentre.com/tr_map/fcst/car006.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/eam084.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/eam132.png?latest",
   ],
   [
     "MAPS",
