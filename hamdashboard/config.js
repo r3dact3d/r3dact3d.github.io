@@ -11,19 +11,6 @@ const aURL = [
 
   [
     "2196F3",
-    "TIME.IS",
-    "https://time.is/",
-    "1",
-  ],
-  [
-    "2196F3",
-    "SPACEX",
-    "https://www.youtube.com/embed/cOmmvhDQ2HM?autoplay=1",
-    "1",
-  ],
-
-  [
-    "2196F3",
     "CLUBLOG",
     "https://clublog.org/livestream/W5AWW",
     "1.7",
@@ -74,13 +61,27 @@ const aURL = [
     "ADSB",
     "https://globe.adsbexchange.com/",
     "1",
-    ],
+  ],
   
 
   //["2196F3", "PISTAR", "http://pi-star.local/", "1.2"],
 
  
   // Right side slideout
+  [
+    "2196F3",
+    "TIME.IS",
+    "https://time.is/",
+    "1",
+    "R",
+  ],
+  [
+    "2196F3",
+    "SPACEX",
+    "https://www.youtube.com/embed/cOmmvhDQ2HM?autoplay=1",
+    "1", 
+    "R"
+  ],
   [
     "2196F3",
     "WEATHER",
