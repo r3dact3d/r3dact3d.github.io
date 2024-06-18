@@ -175,7 +175,7 @@ const aIMG = [
   ],
   [
     "",
-    "https://pota-stats.wd4dan.net/?call=WD4DAN&options=condensed",
+    "https://www.youtube.com/embed/cOmmvhDQ2HM?autoplay=1",
   ],
   [
     "ISS & RS-44 POSITION",
