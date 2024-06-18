@@ -55,7 +55,6 @@ const aURL = [
     "1",
   ],
   ["2196F3", "WINLINK", "https://cms.winlink.org:444/maps/propagation.aspx", "1"],
-  ["2196F3", "Stuff In Space", "https://stuffin.space/", "1"],
   [
     "2196F3",
     "ADSB",
@@ -96,6 +95,7 @@ const aURL = [
     "1", 
     "R"
   ],
+  ["2196F3", "Stuff In Space", "https://stuffin.space/", "1"],
   [
     "2196F3",
     "WEATHER",
