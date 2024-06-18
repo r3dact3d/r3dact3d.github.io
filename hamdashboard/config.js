@@ -190,8 +190,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "VOLCANO",
-    "https://embed.skylinewebcams.com/img/1441.jpg",
+    "LV STRIP",
+    "https://www.skylinewebcams.com/en/webcam/united-states/nevada/las-vegas/las-vegas.html",
   ],
 
   [
