@@ -38,7 +38,7 @@ const aURL = [
   ],
   [
     "2196F3",
-    "Band Plan",
+    "BAND PLAN",
     "https://kd4atw.org/wp-content/uploads/2012/05/band_plan.png",
     "1",
   ],
@@ -105,7 +105,7 @@ const aURL = [
   ],
   [
     "FF000F",
-    "Wx Alerts",
+    "WX ALERTS",
     "https://alerts.weather.gov/search?zone=TXC309",
     "1",
     "R",
@@ -172,8 +172,14 @@ const aIMG = [
   [
     "HEPBURN TROPO",
     "https://www.dxinfocentre.com/tr_map/fcst/car006.png?latest",
-    "https://www.dxinfocentre.com/tr_map/fcst/eam084.png?latest",
-    "https://www.dxinfocentre.com/tr_map/fcst/eam132.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car009.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car015.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car018.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car021.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car024.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car027.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car030.png?latest",
+    "https://www.dxinfocentre.com/tr_map/fcst/car033.png?latest",
   ],
   [
     "MAPS",
