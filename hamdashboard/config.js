@@ -178,6 +178,8 @@ const aIMG = [
     "https://www.mapability.com/ei8ic/maps/ARRL_RAC_Sections_2023_1254x969.png",
     "https://www.mapability.com/ei8ic/maps/USA_Call_Areas_1652.png",
     "https://www.mapability.com/ei8ic/maps/CQ_Zones_02.png",
+    "https://www.qsl.net/pjdyer/TX-A-3.GIF",
+    "https://gisgeography.com/wp-content/uploads/2020/02/Texas-County-Map.jpg",
 
   ],
   [
