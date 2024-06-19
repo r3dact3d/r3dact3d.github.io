@@ -196,8 +196,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "SOLAR",
-    "https://f002.backblazeb2.com/file/KE0TCF-radio/production/SDO/2024/06/17/20240617_235854_2048_0304_t.jpg",
+    "SOLAR EVENTS",
+    "http://www.sws.bom.gov.au/Images/Solar/Solar%20Conditions/X-Ray%20Flux/flarefadeout.gif",
   ],
 
   [
