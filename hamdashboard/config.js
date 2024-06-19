@@ -196,8 +196,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "WILD LIFE",
-    "https://youtu.be/Jng6h2xYapk",
+    "SOLAR",
+    "https://f002.backblazeb2.com/file/KE0TCF-radio/production/SDO/2024/06/17/20240617_235854_2048_0304_t.jpg",
   ],
 
   [
