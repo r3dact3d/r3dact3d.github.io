@@ -197,7 +197,7 @@ const aIMG = [
   ],
   [
     "SANTA MONICA",
-    "<https://www.youtube.com/embed/qmE7U1YZPQA",
+    "https://www.youtube.com/embed/qmE7U1YZPQA",
   ],
 
   [
