@@ -196,8 +196,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "HOG CREEK",
-    "https://ambientweather.net/devices/public/65fa92cdc595aab3229199dac16cadcf?embed=true",
+    "SANTA MONICA",
+    "<https://www.youtube.com/embed/qmE7U1YZPQA",
   ],
 
   [
