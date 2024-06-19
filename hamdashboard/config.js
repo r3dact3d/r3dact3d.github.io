@@ -198,6 +198,9 @@ const aIMG = [
   [
     "SOLAR EVENTS",
     "http://www.sws.bom.gov.au/Images/Solar/Solar%20Conditions/X-Ray%20Flux/flarefadeout.gif",
+    "https://www.sws.bom.gov.au/Images/Solar/Solar%20Conditions/Proton%20Flux/ico_protonflux.gif",
+    "https://www.tvcomm.co.uk/g7izu/Autosave/ico_xrayflux.gif",
+    "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_256_0094.jpg",
   ],
 
   [
