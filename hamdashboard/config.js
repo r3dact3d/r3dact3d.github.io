@@ -196,8 +196,8 @@ const aIMG = [
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
   [
-    "SANTA MONICA",
-    "https://www.youtube.com/embed/qmE7U1YZPQA",
+    "WILD LIFE",
+    "https://youtu.be/Jng6h2xYapk",
   ],
 
   [
