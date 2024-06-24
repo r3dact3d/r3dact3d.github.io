@@ -153,9 +153,13 @@ const aIMG = [
   [
     "FORECASTS",
 	  "https://www.wpc.ncep.noaa.gov/noaa/noaa.gif",
-    "http://www.weather.gov/images/fwd/graphicast/image3.jpg",
-    "http://www.weather.gov/images/fwd/graphicast/image7.jpg",
+    "https://www.weather.gov/images/fwd/graphicast/image1.jpg",
     "http://www.weather.gov/images/fwd/graphicast/image2.jpg",
+    "http://www.weather.gov/images/fwd/graphicast/image3.jpg",
+    "http://www.weather.gov/images/fwd/graphicast/image4.jpg",
+    "http://www.weather.gov/images/fwd/graphicast/image5.jpg",
+    "http://www.weather.gov/images/fwd/graphicast/image6.jpg",
+    "http://www.weather.gov/images/fwd/graphicast/image7.jpg",
   ],
 
   [
