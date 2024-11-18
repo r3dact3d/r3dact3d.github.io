@@ -1,14 +1,14 @@
 ---
 title: "Post Title Here"
 hidden: true
-last_modified_at:
 excerpt_separator: "<!--more-->"
 categories:
-  - [Category Here]
+  - Amateur Radio
 tags:
-  - [Tag 1]
-  - [Tag 2]
-  - [Tag 3]
+  - simplex
+  - MobOps
+  - HF
+  - Antenna
 layout: post
 ---
 
@@ -47,5 +47,5 @@ Provide a detailed explanation of your findings or the results of your project. 
 - Observations or results
 
 ```markdown
-![Example Image](images/example.jpg){: .align-center}
+![Example Image](images/me-madano-pass.jpg){: .align-center}
 *Optional Caption for Image*
