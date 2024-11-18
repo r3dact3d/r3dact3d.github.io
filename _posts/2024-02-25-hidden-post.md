@@ -9,7 +9,6 @@ tags:
   - MobOps
   - HF
   - Antenna
-layout: post
 ---
 
 # [📡 Title or Main Idea]
