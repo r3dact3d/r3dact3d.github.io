@@ -58,7 +58,7 @@ Here are the SSTV images I decoded during the exercise. These were received from
 <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
-  <img src="/images/40th_ham_space_9.png" alt="SSTV Image 1" style="width: 100%;">
+  <img src="/images/40th_ham_space_4.png" alt="SSTV Image 1" style="width: 100%;">
   <p>*Decoded Image 1: [SSTV Image]*</p>
 </div>
 
