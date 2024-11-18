@@ -104,8 +104,9 @@ Here are the SSTV images I decoded during the exercise. These were received from
 ### 🌟 Highlights and Challenges
 
 - **Highlights**:
-  - Successfully decoded all 8 images from two locations.
-  - Portable setup worked flawlessly using a simple Yagi antenna.
+  - Successfully decoded 8 images from two locations.
+  - Portable setup worked using a simple j-pole antenna.
+  - Yagi antenna recieved lower angle passes much better
 
 - **Challenges**:
   - Required precise timing and aiming for optimal ISS passes.
@@ -118,10 +119,10 @@ Here are the SSTV images I decoded during the exercise. These were received from
 This was an incredibly rewarding experience. Capturing SSTV images from space using a modest setup highlighted the power of amateur radio and the joy of experimentation.  
 
 For my next steps, I plan to:
-- Enhance my portable setup with a lightweight tripod for better antenna aiming.
-- Experiment with different SSTV decoding software to improve quality.
+- Enhance my portable setup with a lightweight tripod for better antenna aiming, and for use with working Satellites using other modes.
+- Experiment with different SSTV decoding software and hardware to improve quality and attempt to transmit SSTV.
 
-**73 de [Your Call Sign]**
+**73 de W5AWW**
 
 ---
 
