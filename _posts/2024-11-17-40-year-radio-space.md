@@ -13,12 +13,11 @@ tags:
 
 > *To celebrate the 40th Anniversary of Amateur Radio in Space I attempt to capture and decode SSTV images that are being transmitted from the ISS - here is what and how I did!*
 
+---
 
 ```markdown
 ![Official ARISS](images/official_40.png){: .align-center}
 *Celebrating the Positive Impact of Amateur Radio on Human Spaceflight*
-
----
 
 ## Quick Summary
 **Main Topic**: Sharing the SSTV images I was able to decode from the ISS.  
