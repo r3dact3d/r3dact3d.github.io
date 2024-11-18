@@ -14,11 +14,12 @@ tags:
 > *To celebrate the 40th Anniversary of Amateur Radio in Space I attempt to capture and decode SSTV images that are being transmitted from the ISS - here is what and how I did!*
 
 ---
-
-![Official ARISS](/images/official_40.png){: .align-center}
-*Celebrating the Positive Impact of Amateur Radio on Human Spaceflight*
-
-![source](https://www.ariss.org/overview.html)
+## 🖼 
+<div style="text-align: center;">
+  <img src="images/official_40.png" alt="ARISS 40th Anniversary" style="width: 80%;">
+  <p><em>Celebrating the Positive Impact of Amateur Radio on Human Spaceflight</em></p>
+  <p>Source: <a href="https://www.ariss.org/" target="_blank">ARISS Official Website</a></p>
+</div>
 
 ## Quick Summary
 **Main Topic**: Sharing the SSTV images I was able to decode from the ISS.  
@@ -37,6 +38,12 @@ I already had the knowledge and experience of tracking the ISS and other Satelli
 
 The idea that I can get images from space with just an RF signal and some decode software that can potentially run on portable power intrigued me. This anniversary exercise takes place over a week, with the ISS transmitting several different images from space.
 
+Here’s the setup I used for this project:
+
+<div style="text-align: center;">
+  <img src="/images/IMG_0678.JPG" alt="Portable SSTV Setup" style="width: 70%;">
+  <p><em>My Portable SSTV Setup: Handy Talky, Laptop, MMSSTV</em></p>
+</div>
 ---
 
 ## 📈 Analysis or Results
