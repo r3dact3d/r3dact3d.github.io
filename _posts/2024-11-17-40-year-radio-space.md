@@ -23,7 +23,7 @@ tags:
 ---
 ## 🖼 
 <div style="text-align: center;">
-  <img src="/images/official_40.png" alt="ARISS 40th Anniversary" style="width: 80%;">
+  <img src="/images/official_40.png" alt="ARISS 40th Anniversary" style="width: 90%;">
   <p><em>Celebrating the Positive Impact of Amateur Radio on Human Spaceflight</em></p>
   <p>Source: <a href="https://www.ariss.org/" target="_blank">ARISS Official Website</a></p>
 </div>
@@ -67,42 +67,42 @@ Here are the SSTV images I decoded during the exercise. These were received from
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_4.png" alt="SSTV Image 1" style="width: 100%;">
-  <p>*Decoded Image 1: [SSTV Image]*</p>
+  <p>*Rough Decode of Sergey and Owen, prior to Richard's flight to ISS*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_9.png" alt="SSTV Image 2" style="width: 100%;">
-  <p>*Decoded Image 2: [SSTV Image]*</p>
+  <p>*Owen, W5LFL, and the STS-9 Space Shuttle Columbia Crew*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_8.png" alt="SSTV Image 3" style="width: 100%;">
-  <p>*Decoded Image 3: [SSTV Image]*</p>
+  <p>*Rough copy of Owen, W5LFL, Performing Radio Simulation Training*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_6.png" alt="SSTV Image 4" style="width: 100%;">
-  <p>*Decoded Image 4: [SSTV Image]*</p>
+  <p>*Sergey Samaburov, RV3DR and Owen, W5LFL prior to Richard Garriott's flight to ISS*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_5.png" alt="SSTV Image 5" style="width: 100%;">
-  <p>*Decoded Image 5: [SSTV Image]*</p>
+  <p>*Rough copy of Owen operating ham station from Space Shuttle Columbia*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_3.png" alt="SSTV Image 6" style="width: 100%;">
-  <p>*Decoded Image 6: [SSTV Image]*</p>
+  <p>*STS-9 Landing Dec 8, 1983: First Amateur Radio on Human Spaceflight Mission Ends*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_2.png" alt="SSTV Image 7" style="width: 100%;">
-  <p>*Decoded Image 7: [SSTV Image]*</p>
+  <p>*Owen, W5LFL, Operates Ham Station from the Sapce Shuttle Columbia*</p>
 </div>
 
 <div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
   <img src="/images/40th_ham_space_1.png" alt="SSTV Image 8" style="width: 100%;">
-  <p>*Decoded Image 8: [SSTV Image]*</p>
+  <p>*Both Owen Garriott, WA5LFL and his song Richard, W5KWQ, made amateur radio contacts from space*</p>
 </div>
 
 </div>
