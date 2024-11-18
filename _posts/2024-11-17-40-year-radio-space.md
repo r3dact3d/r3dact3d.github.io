@@ -29,21 +29,25 @@ tags:
 
 ## 🛠 [Section 1: Setup or Context]
 
-Explain the context or background information. Discuss why this topic is important and what you aimed to accomplish.
+A local area ham shared the anniversary and excerise on a Facebook group and it caught my interest, because recently I had experimented with satellite operations and specifically attempting to use the ISS as a digipeater to transmit my APRS beacon.  So, I already had the knowledge and experience of tracking the ISS and other Satellites, now I just need to learn how to recieve and decode SSTV images, which is something I had heard about, but never attempte before.  Finally, the idea that I can get images from space with just RF signal and some decode software that potentially can be run from portable power, which is what I'll be attempting, seems like a potentially important skill to posess.  This anniversary excercise will take place for a week with the ISS sending a several different images from space.
 
 ---
 
 ### 📈 [Section 2: Analysis or Results]
 
-Provide a detailed explanation of your findings or the results of your project. Use images, tables, or bullet points to make it easy to follow.
+This anniversary excercise is taking place for a week with the ISS sending a several different images from space.
 
-#### Example:
-**Scenario 1: Low Power Setup**
-- Description of the setup
-- Observations or results
+#### SSTV ISS Operations:
+**Portable Setup**
+- VHF handy talky set to frequency 145.800 
+- Audio cable and audio USB
+- Windows laptop with MMSSTV program
+- 10 element 2-meter yagi & roll-up j-pole antennas
 
-**Scenario 2: High Power Setup**
-- Description of the setup
-- Observations or results
+For the operations over the week, I captured SSTV images from the ISS from my QTH shop and also from portable location at Lake Whitney State Park about an hour from my QTH.
+
+
+
+
   
 ```markdown
