@@ -16,7 +16,7 @@ tags:
 ---
 ## 🖼 
 <div style="text-align: center;">
-  <img src="images/official_40.png" alt="ARISS 40th Anniversary" style="width: 80%;">
+  <img src="/images/official_40.png" alt="ARISS 40th Anniversary" style="width: 80%;">
   <p><em>Celebrating the Positive Impact of Amateur Radio on Human Spaceflight</em></p>
   <p>Source: <a href="https://www.ariss.org/" target="_blank">ARISS Official Website</a></p>
 </div>
