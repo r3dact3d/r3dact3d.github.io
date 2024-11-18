@@ -9,17 +9,9 @@ tags:
   - Satellite
 ---
 
-# 📡 40 Years of Amateur Radio on Human SpaceFlight
+# 📡 SSTV from Space
 
 > *To celebrate the 40th Anniversary of Amateur Radio in Space I attempt to capture and decode SSTV images that are being transmitted from the ISS - here is what and how I did!*
-
----
-## 🖼 
-<div style="text-align: center;">
-  <img src="/images/official_40.png" alt="ARISS 40th Anniversary" style="width: 80%;">
-  <p><em>Celebrating the Positive Impact of Amateur Radio on Human Spaceflight</em></p>
-  <p>Source: <a href="https://www.ariss.org/" target="_blank">ARISS Official Website</a></p>
-</div>
 
 ## Quick Summary
 **Main Topic**: Sharing the SSTV images I was able to decode from the ISS.  
@@ -29,8 +21,16 @@ tags:
 <!--more-->
 
 ---
+## 🖼 
+<div style="text-align: center;">
+  <img src="/images/official_40.png" alt="ARISS 40th Anniversary" style="width: 80%;">
+  <p><em>Celebrating the Positive Impact of Amateur Radio on Human Spaceflight</em></p>
+  <p>Source: <a href="https://www.ariss.org/" target="_blank">ARISS Official Website</a></p>
+</div>
 
-## 🛠 Setup or Context
+---
+
+## 🛠 Setup 
 
 A local area ham shared the anniversary and exercise on a Facebook group, and it caught my interest. Recently, I had experimented with satellite operations, specifically attempting to use the ISS as a digipeater to transmit my APRS beacon.
 
@@ -44,9 +44,8 @@ Here’s the setup I used for this project:
   <img src="/images/IMG_0678.JPG" alt="Portable SSTV Setup" style="width: 70%;">
   <p><em>My Portable SSTV Setup: Handy Talky, Laptop, MMSSTV</em></p>
 </div>
----
 
-## 📈 Analysis or Results
+---
 
 ### Portable Setup:
 - **VHF Handy Talky**: Tuned to 145.800 MHz
@@ -54,6 +53,8 @@ Here’s the setup I used for this project:
 - **USB Audio Device**: Might not be neeed, but I had it and used it
 - **Windows Laptop**: Running MMSSTV software
 - **Antennas**: 10-element 2-meter yagi & roll-up j-pole
+
+## 📈 Results
 
 ### Captured Images:
 Here are the SSTV images I decoded during the exercise. These were received from both my QTH shop and a portable location at Lake Whitney State Park.
