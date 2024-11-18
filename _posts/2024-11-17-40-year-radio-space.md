@@ -15,8 +15,10 @@ tags:
 
 ---
 
-![Official ARISS](images/official_40.png){: .align-center}
+![Official ARISS](/images/official_40.png){: .align-center}
 *Celebrating the Positive Impact of Amateur Radio on Human Spaceflight*
+
+![source](https://www.ariss.org/overview.html)
 
 ## Quick Summary
 **Main Topic**: Sharing the SSTV images I was able to decode from the ISS.  
@@ -29,7 +31,9 @@ tags:
 
 ## 🛠 Setup or Context
 
-A local area ham shared the anniversary and exercise on a Facebook group, and it caught my interest. Recently, I had experimented with satellite operations, specifically attempting to use the ISS as a digipeater to transmit my APRS beacon. I already had the knowledge and experience of tracking the ISS and other Satellites. Now, I just needed to learn how to receive and decode SSTV images.  
+A local area ham shared the anniversary and exercise on a Facebook group, and it caught my interest. Recently, I had experimented with satellite operations, specifically attempting to use the ISS as a digipeater to transmit my APRS beacon.
+
+I already had the knowledge and experience of tracking the ISS and other Satellites. Now, I just needed to learn how to receive and decode SSTV images.  
 
 The idea that I can get images from space with just an RF signal and some decode software that can potentially run on portable power intrigued me. This anniversary exercise takes place over a week, with the ISS transmitting several different images from space.
 
@@ -51,29 +55,50 @@ Here are the SSTV images I decoded during the exercise. These were received from
 
 ### 🖼 SSTV Images
 
-![SSTV Image 1](images/40th_ham_space_9.png){: .align-center}
-*Decoded Image 1: [SSTV Image]*
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
 
-![SSTV Image 2](images/40th_ham_space_9.png){: .align-center}
-*Decoded Image 2: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_9.png" alt="SSTV Image 1" style="width: 100%;">
+  <p>*Decoded Image 1: [SSTV Image]*</p>
+</div>
 
-![SSTV Image 3](images/40th_ham_space_8.png){: .align-center}
-*Decoded Image 3: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_9.png" alt="SSTV Image 2" style="width: 100%;">
+  <p>*Decoded Image 2: [SSTV Image]*</p>
+</div>
 
-![SSTV Image 4](images/40th_ham_space_6.png){: .align-center}
-*Decoded Image 4: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_8.png" alt="SSTV Image 3" style="width: 100%;">
+  <p>*Decoded Image 3: [SSTV Image]*</p>
+</div>
 
-![SSTV Image 5](images/40th_ham_space_5.png){: .align-center}
-*Decoded Image 5: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_6.png" alt="SSTV Image 4" style="width: 100%;">
+  <p>*Decoded Image 4: [SSTV Image]*</p>
+</div>
 
-![SSTV Image 6](images/40th_ham_space_3.png){: .align-center}
-*Decoded Image 6: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_5.png" alt="SSTV Image 5" style="width: 100%;">
+  <p>*Decoded Image 5: [SSTV Image]*</p>
+</div>
 
-![SSTV Image 7](images/40th_ham_space_2.png){: .align-center}
-*Decoded Image 7: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_3.png" alt="SSTV Image 6" style="width: 100%;">
+  <p>*Decoded Image 6: [SSTV Image]*</p>
+</div>
 
-![SSTV Image 8](images/40th_ham_space_1.png){: .align-center}
-*Decoded Image 8: [SSTV Image]*
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_2.png" alt="SSTV Image 7" style="width: 100%;">
+  <p>*Decoded Image 7: [SSTV Image]*</p>
+</div>
+
+<div style="flex: 1 1 calc(25% - 16px); max-width: calc(25% - 16px); text-align: center;">
+  <img src="/images/40th_ham_space_1.png" alt="SSTV Image 8" style="width: 100%;">
+  <p>*Decoded Image 8: [SSTV Image]*</p>
+</div>
+
+</div>
+
 ---
 
 ### 🌟 Highlights and Challenges
@@ -100,9 +125,3 @@ For my next steps, I plan to:
 
 ---
 
-### Explanation of Image Integration
-- **Image Links**: Replace `images/sstv1.jpg`, `images/sstv2.jpg`, etc., with the actual paths to your image files in your repository.
-- **Captions**: Add captions to describe the context of each image.
-- **Styling**: `{:.align-center}` centers the images. You can adjust alignment or size using CSS if needed.
-
-If you'd like a grid layout for the images, let me know, and I can help you implement that!
