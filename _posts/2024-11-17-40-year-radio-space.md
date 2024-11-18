@@ -15,7 +15,6 @@ tags:
 
 ---
 
-```markdown
 ![Official ARISS](images/official_40.png){: .align-center}
 *Celebrating the Positive Impact of Amateur Radio on Human Spaceflight*
 
@@ -46,3 +45,5 @@ Provide a detailed explanation of your findings or the results of your project. 
 **Scenario 2: High Power Setup**
 - Description of the setup
 - Observations or results
+  
+```markdown
