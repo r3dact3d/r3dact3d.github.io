@@ -143,11 +143,15 @@ const aIMG = [
     "https://radar.weather.gov/ridge/standard/CONUS_loop.gif",
     "https://radar.weather.gov/ridge/standard/KGRK_loop.gif",
     "https://radar.weather.gov/ridge/standard/KFWS_loop.gif",
+    "https://radar.weather.gov/ridge/standard/KHGX_loop.gif",
+    "https://radar.weather.gov/ridge/standard/KMLB_loop.gif",
+    "https://radar.weather.gov/ridge/standard/KEYX_loop.gif",
+    "https://radar.weather.gov/ridge/standard/KDOX_loop.gif",
   ],
   [
     "SATELLITES",
     "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/GOES16-CONUS-GEOCOLOR-625x375.gif",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/sp/GEOCOLOR/300x300.jpg",
+    "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/sp/GEOCOLOR/300x300.jpg",    
   ],
   
   [
