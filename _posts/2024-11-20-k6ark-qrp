@@ -32,19 +32,81 @@ Well, because I still like to go on hikes and the lighter the better, plus I thi
 
 ---
 
-### 📈 [Section 2: Analysis or Results]
+### 📈 [Building the QRP 49:1 EFHW Antenna]
 
-Provide a detailed explanation of your findings or the results of your project. Use images, tables, or bullet points to make it easy to follow.
+Inspired by the excellent instructions provided by [K6ARK](https://k6ark.com/qrp-491-efhw-build-instructions/),
+I decided to take on the challenge of picking up an iron to build a QRP End-Fed Half-Wave antenna. 
 
-#### Example:
-**Scenario 1: Low Power Setup**
-- Description of the setup
-- Observations or results
+Here's a step-by-step recount of my progress, complete with photos.
 
-**Scenario 2: High Power Setup**
-- Description of the setup
-- Observations or results
+---
 
-```markdown
-![Example Image](images/me-madano-pass.jpg){: .align-center}
-*Optional Caption for Image*
+#### Materials and Tools
+
+Before getting started, I gathered all the materials and tools listed in the guide. The clear and concise instructions made it easy to ensure I had everything I needed.
+
+
+![Prepping all the things](/images/k6ark_qrp_1.jpg)
+*A clean workspace makes this process much smoother.*
+
+---
+
+#### Step-by-Step Progress
+
+##### Step 1: Wind the transformer
+The first step I did was wind the toroidal transformer as described in the documentation and pictured. 
+
+![Step 1: Wind the ring](/images/k6ark_qrp_2.jpg)
+*A clean workspace makes this process much smoother.*
+
+---
+
+##### Step 2: Soldering the Components
+Next, I soldered the components onto the PCB. Attention to detail here is key to a reliable build.
+
+![Step 2: Soldering Components](/images/k6ark_qrp_3.jpg)
+*Steady hands and patience are essential for soldering! And readers helped me a bit :)*
+
+---
+
+##### Step 3: Assembling the Enclosure
+With the components soldered, I moved on to assembling the enclosure and ensuring all parts fit snugly.
+
+![Step 3: Assembling the Enclosure]/images/k6ark_qrp_4.jpg)
+*The enclosure helps protect the components from the elements.*
+
+---
+
+##### Step 4: Final Testing
+After assembly, I tested the antenna using an antenna analyzer to confirm everything was functioning as expected.
+
+![Step 4: Final Testing](/images/k6ark_qrp_5.jpg)
+*The readings looked great!*
+
+---
+
+##### Step 5: Deployment
+Finally, I deployed the antenna in my backyard for its first real-world test. The performance exceeded my expectations!
+
+![Step 5: Deployment](/images/k6ark_qrp_6.jpg)
+*Up and running! The QRP EFHW in action.*
+
+---
+
+#### Lessons Learned and Final Thoughts
+
+This project was incredibly rewarding, and I learned a lot along the way. Following [K6ARK's guide](https://k6ark.com/qrp-491-efhw-build-instructions/) made it achievable, even for a beginner like me.
+
+
+---
+
+### Conclusion
+
+If you're considering building your own QRP EFHW, I recommend checking out [K6ARK's guide](https://k6ark.com/qrp-491-efhw-build-instructions/). The process is straightforward, the results are satisfying, and you'll have a portable, high-performing antenna for your QRP operations.
+
+**73 de W5AWW**
+
+---
+
+*If you have any questions or want to share your own build experience, feel free to leave a comment below.*
+
