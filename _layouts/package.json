@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A foam template using gatsby-theme-kb for publishing you knowledge base",
   "main": "index.js",
+
+
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build && gh-pages -d public -b main",
     "serve": "gatsby serve"
   },
   "keywords": [
