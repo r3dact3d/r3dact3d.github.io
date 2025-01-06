@@ -5,7 +5,7 @@ title: Home
 
 # Welcome to My Blog
 
-Hi, I'm [Your Name], a [Your Profession] with a passion for [Your Interests]. On this site, you'll find a collection of my technical articles, blog posts, and other content.
+Hi, I'm Brady T, a Red Hat Architect with a passion for the outdoors and amateur radio. On this site, you'll find a collection of my technical articles, blog posts, and other content.
 
 ## Latest Posts
 
@@ -19,9 +19,9 @@ Hi, I'm [Your Name], a [Your Profession] with a passion for [Your Interests]. On
 
 ## About Me
 
-- [Link to Second Brain project](https://your-second-brain.com)
-- [Link to qrz profile](https://www.qrz.com/your-profile)
-- [Link to other social media profiles or resources]
+- [Link to Second Brain project](https://r3dact3d.github.io/brain-dump/)
+- [Link to qrz profile](https://www.qrz.com/db/W5AWW)
+- [Link to Linkedin profile](https://www.linkedin.com/in/brady-thompson-redactedtech/)
 
 ## Explore
 
