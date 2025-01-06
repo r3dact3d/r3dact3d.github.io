@@ -1,8 +1,9 @@
 ---
 layout: home
+title: Access Granted
 ---
 
-# Access Granted: Open Source
+# Open Source
 
 Hi, I'm Brady T, a Red Hat Architect with a passion for the outdoors and amateur radio. On this site, you'll find a collection of my technical articles, blog posts, and other content.
 
