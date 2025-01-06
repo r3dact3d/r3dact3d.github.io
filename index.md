@@ -1,9 +1,8 @@
 ---
 layout: home
-title: Home
 ---
 
-# Welcome to My Blog
+# Access Granted: Open Source
 
 Hi, I'm Brady T, a Red Hat Architect with a passion for the outdoors and amateur radio. On this site, you'll find a collection of my technical articles, blog posts, and other content.
 
@@ -17,7 +16,7 @@ Hi, I'm Brady T, a Red Hat Architect with a passion for the outdoors and amateur
   {% endfor %}
 </ul>
 
-## About Me
+## Second Brain
 
 - [Link to Second Brain project](https://r3dact3d.github.io/brain-dump/)
 - [Link to qrz profile](https://www.qrz.com/db/W5AWW)
