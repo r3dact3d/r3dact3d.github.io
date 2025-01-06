@@ -17,7 +17,7 @@ Hi, I'm Brady T, a Red Hat Architect with a passion for the outdoors and amateur
   {% endfor %}
 </ul>
 
-## Second Brain
+## For the real curious
 
 - [Link to Second Brain project](https://r3dact3d.github.io/brain-dump/)
 - [Link to qrz profile](https://www.qrz.com/db/W5AWW)
