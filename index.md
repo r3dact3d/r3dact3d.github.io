@@ -26,16 +26,12 @@ Latest Posts
 Explore
 -------
 
-<MarginNote>
 * [Categories](https://r3dact3d.github.io/categories/)
 * [Tags](https://r3dact3d.github.io/tags/)
-</MarginNote>
 
 For the curious
 ---------------
 
-<MarginNote>
 * [Link to Second Brain project](https://r3dact3d.github.io/brain-dump/)
 * [Link to qrz profile](https://www.qrz.com/db/W5AWW)
 * [Link to Linkedin profile](https://www.linkedin.com/in/brady-thompson-redactedtech/)
-</MarginNote>
