@@ -51,6 +51,7 @@ Running Large Language Models (LLMs) locally offers enhanced data privacy, faste
 This setup also provides better control over resources and can be cost-effective in the long run, especially for organizations with existing hardware infrastructure.
 
 ![0ri0n Local AI](../images/0ri0n-Local-AI.jpg)
+
 _My Home Lab Architecture for Operation 0ri0n_
 
 ### Technical Document: Setting Up Open-WebUI and Ollama
@@ -178,27 +179,12 @@ I configured static IP, but this is not really needed, especially if you already
    - 
 > _This process sets up a scheduled task in Windows Task Scheduler to start WSL on system startup._
 
-1. **CloudFlare Tunnel**:
+8. **CloudFlare Tunnel**:
    
    ```bash
    docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token ******eE9Ea3la**********
    ```
    _This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
-
-2.  **Validate GPU Installation**:
-    
-   ```bash
-   $ nvidia-smi -l
-   ```
-   _This command lists the current state of NVIDIA GPUs and drivers on the system._
-
-3.  **Open WebUI Configuration**:
-    
-   - Enable Search Engine:
-     - Google Programmable Search Engine
-       - Search Engine: 0ri0n Glass
-       - API Key: 0ri0n Local
-   _These configurations enable a programmable search engine for Open-WebUI with specific settings._
 
 ## Open WebUI Configuration
 
