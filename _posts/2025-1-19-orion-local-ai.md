@@ -76,11 +76,11 @@ This setup will help you run Open-WebUI and Ollama effectively on your system.
 
 > By choosing Windows 11 and relying on WSL (Windows Subsystem for Linux), we are leveraging the popularity and ease of use of a Windows environment while harnessing the power of Linux, simply because this setup is popular and convenient for highlighting and testing out the capabilities of WSL.
 
-#### Steps:
+### Steps:
 
 From Windows 11 - open a PowerShell prompt as Administrator and run:
 
-1. **WSL Installation**:
+#### **WSL Installation**:
    
 ```bash
 > wsl --install
@@ -89,7 +89,7 @@ _This command installs Windows Subsystem for Linux (WSL) to provide a lightweigh
 
 Now, you should see a different prompt when WSL is finished starting.
 
-2. **Docker Installation**:
+#### **Docker Installation**:
    
 ```bash
 $ curl https://get.docker.com | sh
@@ -97,7 +97,7 @@ $ curl https://get.docker.com | sh
 
 _This command downloads and runs a script that automatically installs Docker on the system._
 
-3. **Install Nvidia Driver for Docker Containers**:
+#### **Install Nvidia Driver for Docker Containers**:
    
 ```bash
 $ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey |sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list && sudo apt-get update
@@ -112,7 +112,7 @@ $ sudo service docker restart
 
 _These commands download and add the necessary GPG key, configure the NVIDIA container toolkit repository, install the toolkit, and then restart Docker to use the GPU with Docker containers._
 
-4. **Install Open-WebUI and Ollama**:
+#### **Install Open-WebUI and Ollama**:
    
 This command runs a Docker container named ollama using all available GPUs, mounts a volume for persistent storage, exposes port 11434 on both the host and the container, and sets environment variables to enable specific features like flash attention and quantization type.
 
@@ -134,7 +134,7 @@ For a quick test we can try out this command to see how much GPU ram is being ut
 $ nvidia-smi -l
 ```
 
-5. **Set Up Static IP on 0ri0n**:
+#### **Set Up Static IP on 0ri0n**:
 
 I configured static IP, but this is not really needed, especially if you already have DNS or DHCP implemented in your network.
    
@@ -157,7 +157,7 @@ Edit `/etc/netplan/01-netcfg.yaml` with the following configuration:
 
 _This YAML configuration sets up a static IP address for the network interface `eth0`, assigns it a specific IP (`172.20.87.223`), configures default gateway and DNS servers._
 
-6. **Expose WSL Port in Windows**:
+#### **Expose WSL Port in Windows**:
    
 Run the following commands in PowerShell as Administrator:
 ```powershell
@@ -167,7 +167,7 @@ Run the following commands in PowerShell as Administrator:
 
 I need to open the firewall port on Windows 11 so that I can access the api provided by Ollama from other devices on my network.
 
-7. **Start WSL on Windows 11 Startup**:
+#### **Start WSL on Windows 11 Startup**:
    
 This is another optional step, but I wanted to ensure that if my desktop were to reboot, that all services would return.
 
@@ -185,11 +185,55 @@ At this point, you should be able to start inferencing with the models being ser
 
 Try accessing [Open WebUI](http://localhost:8080) @ https://localhost:8080 or whatever your ip is of your Open WebUI docker instance.
 
-8. **Nginx Proxy**
+#### **Nginx Proxy**
 
-Fill in with nginx.conf and thoughts
+I created a proxy that listens on port 443 and passes the traffic to the docker container and port 8080 for Open WebUI GUI
 
-9.  **CloudFlare Tunnel**:
+```bash
+docker run -d --name nginx -p 443:443 -v ~/conf.d:/etc/nginx/conf.d -v ~/ssl:/etc/nginx/ssl --add-host=host.docker.internal:host-gateway --restart always nginx:alpine
+```
+
+```bash
+cat << 'EOF' > ~/conf.d/open-webui.conf
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+}
+
+server {
+    listen 443 ssl;
+    server_name <ip_address>;
+
+    ssl_certificate /etc/nginx/ssl/nginx.crt;
+    ssl_certificate_key /etc/nginx/ssl/nginx.key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    location / {
+        proxy_pass http://host.docker.internal:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # WebSocket support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+
+        # Timeouts
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 75s;
+
+        # Disable buffering for real-time responses
+        proxy_buffering off;
+    }
+}
+EOF
+```
+
+> !NOTE: There are a couple of places in the code that will need to be updated to reflect the correct IP Address
+
+####  **CloudFlare Tunnel**:
 
 In order for me to access my local modle remotely or when I am away from my home network, I decided to created a CloudFlare zero-trust tunnel to make it super easy.  After creating an account and setting up a DNS record, I was given this docker command with token to run.  This just works for me.
    
