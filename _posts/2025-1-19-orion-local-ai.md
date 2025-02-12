@@ -122,6 +122,8 @@ $ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama 
 
 This command runs a Docker container named open-webui, uses the host network mode for better performance, mounts a volume for data persistence, sets an environment variable with the OLLAMA_BASE_URL, and ensures the container restarts automatically.
 
+> !NOTE: The environment variables `OLLAMA_FLASH_ATTENTION` and `OLLAMA_KV_CACHE_TYPE` enable quantization and context quantization and you can omit those from the command if you have problems.
+
 ```bash
 $ docker run -d --network=host -v open-web:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui:main
 ```
@@ -183,8 +185,11 @@ At this point, you should be able to start inferencing with the models being ser
 
 Try accessing [Open WebUI](http://localhost:8080) @ https://localhost:8080 or whatever your ip is of your Open WebUI docker instance.
 
+8. **Nginx Proxy**
 
-8. **CloudFlare Tunnel**:
+Fill in with nginx.conf and thoughts
+
+9.  **CloudFlare Tunnel**:
 
 In order for me to access my local modle remotely or when I am away from my home network, I decided to created a CloudFlare zero-trust tunnel to make it super easy.  After creating an account and setting up a DNS record, I was given this docker command with token to run.  This just works for me.
    
@@ -193,12 +198,17 @@ docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token *
 ```
 _This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
 
-## Open WebUI Configuration
 
-### Models
+## Pausing Thoughts
 
-### Enable Search Engine
+Now our picture is complete and all components are in place for us to: 
 
-- Google Programmable Search Engine
-  - Search Engine - 0ri0n Glass
-  - API Key - 0ri0n Local
+- Access the Open WebUI GUI locally an remotely
+- Access Ollama via the CLI locally
+- Leverage the Ollama API locally
+
+In today’s digital age, we’re constantly navigating between public and private spaces. Whether it’s our online identities or the systems running behind the scenes, striking a balance is key to maintaining control and efficiency.
+
+## What is next?
+
+Next I plan to dive deeper into model specifics around quantization and tuning for efficiency, as well as take a closer look at the settings and features in both Ollama and Open WebUI.  
