@@ -82,62 +82,62 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
 
 1. **WSL Installation**:
    
-   ```bash
-   > wsl --install
-   ```
-   _This command installs Windows Subsystem for Linux (WSL) to provide a lightweight version of Linux on your Windows machine._
+```bash
+> wsl --install
+```
+_This command installs Windows Subsystem for Linux (WSL) to provide a lightweight version of Linux on your Windows machine._
 
 Now, you should see a different prompt when WSL is finished starting.
 
 2. **Docker Installation**:
    
-   ```bash
-   $ curl https://get.docker.com | sh
-   ```
+```bash
+$ curl https://get.docker.com | sh
+```
 
-   _This command downloads and runs a script that automatically installs Docker on the system._
+_This command downloads and runs a script that automatically installs Docker on the system._
 
 3. **Install Nvidia Driver for Docker Containers**:
    
-   ```bash
-   $ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey |sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list && sudo apt-get update
-   ```
+```bash
+$ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey |sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list && sudo apt-get update
+```
 
-   ```bash
+```bash
 
-   $ sudo apt-get install -y nvidia-container-toolkit
+$ sudo apt-get install -y nvidia-container-toolkit
    
-   $ sudo service docker restart
-   ```
+$ sudo service docker restart
+```
 
-   _These commands download and add the necessary GPG key, configure the NVIDIA container toolkit repository, install the toolkit, and then restart Docker to use the GPU with Docker containers._
+_These commands download and add the necessary GPG key, configure the NVIDIA container toolkit repository, install the toolkit, and then restart Docker to use the GPU with Docker containers._
 
 4. **Install Open-WebUI and Ollama**:
    
 This command runs a Docker container named ollama using all available GPUs, mounts a volume for persistent storage, exposes port 11434 on both the host and the container, and sets environment variables to enable specific features like flash attention and quantization type.
 
-   ```bash
-   $ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama --restart=always -e OLLAMA_FLASH_ATTENTION=true -e OLLAMA_KV_CACHE_TYPE=q4_0 -e OLLAMA_HOST:0.0.0. ollama/ollama
-   ```
+```bash
+$ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama --restart=always -e OLLAMA_FLASH_ATTENTION=true -e OLLAMA_KV_CACHE_TYPE=q4_0 -e OLLAMA_HOST:0.0.0. ollama/ollama
+```
 
 This command runs a Docker container named open-webui, uses the host network mode for better performance, mounts a volume for data persistence, sets an environment variable with the OLLAMA_BASE_URL, and ensures the container restarts automatically.
 
-   ```bash
-   $ docker run -d --network=host -v open-web:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui:main
-   ```
+```bash
+$ docker run -d --network=host -v open-web:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui:main
+```
 
 For a quick test we can try out this command to see how much GPU ram is being utilized.
 
-   ```bash
-   $ nvidia-smi -l
-   ```
+```bash
+$ nvidia-smi -l
+```
 
 5. **Set Up Static IP on 0ri0n**:
 
 I configured static IP, but this is not really needed, especially if you already have DNS or DHCP implemented in your network.
    
-   Edit `/etc/netplan/01-netcfg.yaml` with the following configuration:
-   ```yaml
+Edit `/etc/netplan/01-netcfg.yaml` with the following configuration:
+```yaml
    network:
      version: 2
      renderer: networkd
@@ -151,40 +151,47 @@ I configured static IP, but this is not really needed, especially if you already
              via: 172.20.80.1
          nameservers:
            addresses: [8.8.8.8, 8.8.4.4]
-   ```
+```
 
-   _This YAML configuration sets up a static IP address for the network interface `eth0`, assigns it a specific IP (`172.20.87.223`), configures default gateway and DNS servers._
+_This YAML configuration sets up a static IP address for the network interface `eth0`, assigns it a specific IP (`172.20.87.223`), configures default gateway and DNS servers._
 
 6. **Expose WSL Port in Windows**:
    
-   Run the following commands in PowerShell as Administrator:
-   ```powershell
-   > netsh interface portproxy add v4tov4 listenport=11434 listenaddress=0.0.0.0 connectport=11434 connectaddress=<IP_ADDRESS>
-   > netsh advfirewall firewall add rule name="ServicePort11434" dir=in action=allow protocol=tcp localport=11434
-   ```
+Run the following commands in PowerShell as Administrator:
+```powershell
+> netsh interface portproxy add v4tov4 listenport=11434 listenaddress=0.0.0.0 connectport=11434 connectaddress=<IP_ADDRESS>
+> netsh advfirewall firewall add rule name="ServicePort11434" dir=in action=allow protocol=tcp localport=11434
+```
 
-   I need to open the firewall port on Windows 11 so that I can access the api provided by Ollama from other devices on my network.
+I need to open the firewall port on Windows 11 so that I can access the api provided by Ollama from other devices on my network.
 
 7. **Start WSL on Windows 11 Startup**:
    
-   This is another optional step, but I wanted to ensure that if my desktop were to reboot, that all services would return.
+This is another optional step, but I wanted to ensure that if my desktop were to reboot, that all services would return.
 
-   - Open Task Scheduler by pressing `Win + S`, type “Task Scheduler”, and open it.
-   - Click on “Create Basic Task” in the right pane, give your task a name and description, then click "Next".
-   - Choose “When the computer starts” as the trigger, then click "Next".
-   - Select “Start a program” as the action, then click "Next". 
-   - Browse to `C:\Windows\System32\wsl.exe`.
-   - In the “Add arguments” field, enter `--distribution Ubuntu` (replace `Ubuntu` with your distribution name if different).
-   - Click "Finish" to create the task.
-   - 
-> _This process sets up a scheduled task in Windows Task Scheduler to start WSL on system startup._
+- Open Task Scheduler by pressing `Win + S`, type “Task Scheduler”, and open it.
+- Click on “Create Basic Task” in the right pane, give your task a name and description, then click "Next".
+- Choose “When the computer starts” as the trigger, then click "Next".
+- Select “Start a program” as the action, then click "Next". 
+- Browse to `C:\Windows\System32\wsl.exe`.
+- In the “Add arguments” field, enter `--distribution Ubuntu` (replace `Ubuntu` with your distribution name if different).
+- Click "Finish" to create the task.
+ 
+> _This process sets up a scheduled task in Windows Task Scheduler to start WSL on system startup._>
+
+At this point, you should be able to start inferencing with the models being served or download your first model.
+
+Try accessing [Open WebUI](http://localhost:8080) @ https://localhost:8080 or whatever your ip is of your Open WebUI docker instance.
+
 
 8. **CloudFlare Tunnel**:
+
+In order for me to access my local modle remotely or when I am away from my home network, I decided to created a CloudFlare zero-trust tunnel to make it super easy.  After creating an account and setting up a DNS record, I was given this docker command with token to run.  This just works for me.
    
-   ```bash
-   docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token ******eE9Ea3la**********
-   ```
-   _This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
+```bash
+docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token ******eE9Ea3la**********
+```
+_This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
 
 ## Open WebUI Configuration
 
