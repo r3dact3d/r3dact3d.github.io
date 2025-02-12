@@ -86,6 +86,8 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
    ```
    _This command installs Windows Subsystem for Linux (WSL) to provide a lightweight version of Linux on your Windows machine._
 
+Now, you should see a different prompt when WSL is finished starting.
+
 2. **Docker Installation**:
    
    ```bash
@@ -111,13 +113,27 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
 
 4. **Install Open-WebUI and Ollama**:
    
+This command runs a Docker container named ollama using all available GPUs, mounts a volume for persistent storage, exposes port 11434 on both the host and the container, and sets environment variables to enable specific features like flash attention and quantization type.
+
    ```bash
-   $ sudo docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
+   $ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama --restart=always -e OLLAMA_FLASH_ATTENTION=true -e OLLAMA_KV_CACHE_TYPE=q4_0 -e OLLAMA_HOST:0.0.0. ollama/ollama
    ```
 
-   _This command runs the Open-WebUI Docker container in detached mode, maps port 3000 to port 8080 inside the container, uses all available GPUs, mounts local directories for persistent storage, and restarts the container if it stops._
+This command runs a Docker container named open-webui, uses the host network mode for better performance, mounts a volume for data persistence, sets an environment variable with the OLLAMA_BASE_URL, and ensures the container restarts automatically.
+
+   ```bash
+   $ docker run -d --network=host -v open-web:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/open-webui:main
+   ```
+
+For a quick test we can try out this command to see how much GPU ram is being utilized.
+
+   ```bash
+   $ nvidia-smi -l
+   ```
 
 5. **Set Up Static IP on 0ri0n**:
+
+I configured static IP, but this is not really needed, especially if you already have DNS or DHCP implemented in your network.
    
    Edit `/etc/netplan/01-netcfg.yaml` with the following configuration:
    ```yaml
@@ -128,7 +144,7 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
        eth0:
          dhcp4: no
          addresses:
-           - 172.20.87.223/20
+           - <IP_ADDRESS>/20
          routes:
            - to: default
              via: 172.20.80.1
@@ -142,14 +158,16 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
    
    Run the following commands in PowerShell as Administrator:
    ```powershell
-   > netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=3000 connectaddress=<IP_ADDRESS>
-   > netsh interface portproxy show all
-   > netsh interface portproxy add v4tov4 listenport=443 listenaddress=0.0.0.0 connectport=443 connectaddress=172.20.87.223
+   > netsh interface portproxy add v4tov4 listenport=11434 listenaddress=0.0.0.0 connectport=11434 connectaddress=<IP_ADDRESS>
+   > netsh advfirewall firewall add rule name="ServicePort11434" dir=in action=allow protocol=tcp localport=11434
    ```
-   _These commands map ports on the Windows machine to ports in WSL, allowing access from the host machine to services running inside WSL._
+
+   I need to open the firewall port on Windows 11 so that I can access the api provided by Ollama from other devices on my network.
 
 7. **Start WSL on Windows 11 Startup**:
    
+   This is another optional step, but I wanted to ensure that if my desktop were to reboot, that all services would return.
+
    - Open Task Scheduler by pressing `Win + S`, type “Task Scheduler”, and open it.
    - Click on “Create Basic Task” in the right pane, give your task a name and description, then click "Next".
    - Choose “When the computer starts” as the trigger, then click "Next".
@@ -157,23 +175,24 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
    - Browse to `C:\Windows\System32\wsl.exe`.
    - In the “Add arguments” field, enter `--distribution Ubuntu` (replace `Ubuntu` with your distribution name if different).
    - Click "Finish" to create the task.
-   _This process sets up a scheduled task in Windows Task Scheduler to start WSL on system startup._
+   - 
+> _This process sets up a scheduled task in Windows Task Scheduler to start WSL on system startup._
 
-8. **CloudFlare Tunnel**:
+1. **CloudFlare Tunnel**:
    
    ```bash
    docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token ******eE9Ea3la**********
    ```
    _This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
 
-9.  **Validate GPU Installation**:
+2.  **Validate GPU Installation**:
     
    ```bash
    $ nvidia-smi -l
    ```
    _This command lists the current state of NVIDIA GPUs and drivers on the system._
 
-10. **Open WebUI Configuration**:
+3.  **Open WebUI Configuration**:
     
    - Enable Search Engine:
      - Google Programmable Search Engine
