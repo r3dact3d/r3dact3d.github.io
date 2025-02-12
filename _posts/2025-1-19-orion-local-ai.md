@@ -24,7 +24,9 @@ When using public and free AI vendors such as ChatGPT, DeepSeek, and Claude, it'
 
 Furthermore, the security measures employed by these services might not be robust enough to prevent unauthorized access or data breaches. 
 
->Users should exercise caution when providing personal or confidential details and consider implementing best practices such as encrypting sensitive data and regularly reviewing privacy policies for any service they use.
+> Users should exercise caution when providing personal or confidential details and consider implementing best practices such as encrypting sensitive data and regularly reviewing privacy policies for any service they use.
+
+Here are just a few of the venders that serve some open source models to the public
 
 - [Mistral](https://chat.mistral.ai/chat)
 - [Claude](https://claude.ai)
@@ -38,6 +40,8 @@ This approach provides better data privacy compared to public clouds while still
 
 > WARNING: This will get very expensive.
 
+This is my pattern to provision infrastructure and integrates GitHub Actions for streamlined automation.
+
 - [Auto Intelligence]()
 
 ### Local Home Lab AI
@@ -46,9 +50,8 @@ Running Large Language Models (LLMs) locally offers enhanced data privacy, faste
 
 This setup also provides better control over resources and can be cost-effective in the long run, especially for organizations with existing hardware infrastructure.
 
-![0ri0n Local AI](../images/0ri0n-Local-AI.jpg) _My Home Lab Architecture for Operation 0ri0n_
-
-Certainly! Here's the technical document with comments explaining each step:
+![0ri0n Local AI](../images/0ri0n-Local-AI.jpg)
+_My Home Lab Architecture for Operation 0ri0n_
 
 ### Technical Document: Setting Up Open-WebUI and Ollama
 
