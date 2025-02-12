@@ -78,23 +78,27 @@ This setup will help you run Open-WebUI and Ollama effectively on your system.
 
 > By choosing Windows 11 and relying on WSL (Windows Subsystem for Linux), we are leveraging the popularity and ease of use of a Windows environment while harnessing the power of Linux, simply because this setup is popular and convenient for highlighting and testing out the capabilities of WSL.
 
-#### Prerequisites:
+#### Steps:
 
 From Windows 11 - open a PowerShell prompt as Administrator and run:
 
 1. **WSL Installation**:
+   
    ```bash
    > wsl --install
    ```
    _This command installs Windows Subsystem for Linux (WSL) to provide a lightweight version of Linux on your Windows machine._
 
 2. **Docker Installation**:
+   
    ```bash
    $ curl https://get.docker.com | sh
    ```
+
    _This command downloads and runs a script that automatically installs Docker on the system._
 
 3. **Install Nvidia Driver for Docker Containers**:
+   
    ```bash
    $ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey |sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list && sudo apt-get update
    ```
@@ -105,18 +109,19 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
    
    $ sudo service docker restart
    ```
-   
+
    _These commands download and add the necessary GPG key, configure the NVIDIA container toolkit repository, install the toolkit, and then restart Docker to use the GPU with Docker containers._
 
-#### Steps:
-
-1. **Install Open-WebUI and Ollama**:
+4. **Install Open-WebUI and Ollama**:
+   
    ```bash
    $ sudo docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
    ```
+
    _This command runs the Open-WebUI Docker container in detached mode, maps port 3000 to port 8080 inside the container, uses all available GPUs, mounts local directories for persistent storage, and restarts the container if it stops._
 
-2. **Set Up Static IP on 0ri0n**:
+5. **Set Up Static IP on 0ri0n**:
+   
    Edit `/etc/netplan/01-netcfg.yaml` with the following configuration:
    ```yaml
    network:
@@ -133,9 +138,11 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
          nameservers:
            addresses: [8.8.8.8, 8.8.4.4]
    ```
+
    _This YAML configuration sets up a static IP address for the network interface `eth0`, assigns it a specific IP (`172.20.87.223`), configures default gateway and DNS servers._
 
-3. **Expose WSL Port in Windows**:
+6. **Expose WSL Port in Windows**:
+   
    Run the following commands in PowerShell as Administrator:
    ```powershell
    > netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=3000 connectaddress=<IP_ADDRESS>
@@ -144,7 +151,8 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
    ```
    _These commands map ports on the Windows machine to ports in WSL, allowing access from the host machine to services running inside WSL._
 
-4. **Start WSL on Windows 11 Startup**:
+7. **Start WSL on Windows 11 Startup**:
+   
    - Open Task Scheduler by pressing `Win + S`, type “Task Scheduler”, and open it.
    - Click on “Create Basic Task” in the right pane, give your task a name and description, then click "Next".
    - Choose “When the computer starts” as the trigger, then click "Next".
@@ -154,19 +162,22 @@ From Windows 11 - open a PowerShell prompt as Administrator and run:
    - Click "Finish" to create the task.
    _This process sets up a scheduled task in Windows Task Scheduler to start WSL on system startup._
 
-5. **CloudFlare Tunnel**:
+8. **CloudFlare Tunnel**:
+   
    ```bash
    docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token ******eE9Ea3la**********
    ```
    _This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
 
-6. **Validate GPU Installation**:
+9.  **Validate GPU Installation**:
+    
    ```bash
    $ nvidia-smi -l
    ```
    _This command lists the current state of NVIDIA GPUs and drivers on the system._
 
-7. **Open WebUI Configuration**:
+10. **Open WebUI Configuration**:
+    
    - Enable Search Engine:
      - Google Programmable Search Engine
        - Search Engine: 0ri0n Glass
