@@ -17,14 +17,14 @@ Here are some of my notable projects:
 
 - **Technologies Used:** Terraform, RHEL, Podman, Ollama, Open WebUI, Nginx, AWS, Git
 - **Link to Project:** [Auto Intelligence](https://github.com/r3dact3d/Auto-Intelligence)
-![Architecture](images/auto-intelligence.png?width=200)
+![Architecture](images/auto-intelligence.png?width=100)
 
 ### Project 2: Execution Environment GitHub Workflow
 
 **Description:** Automated Execution-Environment Builder for Ansible Automation Platform 2
 - **Technologies Used:** GitHub Actions, Quay, Ansible, Git, Private Automatin Hub
 - **Link to Project:** [Ansible Execution Environment Stream](https://github.com/r3dact3d/Ansible-Execution-Environment-Stream)
-![Execution Environment Builder](images/ee-builder.png?width=200)
+![Execution Environment Builder](images/ee-builder.png?width=100)
 
 
 ## Latest Blogs
