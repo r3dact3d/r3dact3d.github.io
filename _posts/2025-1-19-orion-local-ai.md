@@ -23,6 +23,7 @@ More specifically, Artificial Intelligence and working with Large Language Model
 When using public and free AI vendors such as ChatGPT, DeepSeek, and Claude, it's important to be aware of potential privacy and data risks. These platforms may collect user input data for training purposes, which could lead to unintentional sharing of sensitive information. 
 
 Furthermore, the security measures employed by these services might not be robust enough to prevent unauthorized access or data breaches. 
+
 >Users should exercise caution when providing personal or confidential details and consider implementing best practices such as encrypting sensitive data and regularly reviewing privacy policies for any service they use.
 
 - [Mistral](https://chat.mistral.ai/chat)
