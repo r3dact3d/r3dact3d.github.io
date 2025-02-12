@@ -71,9 +71,6 @@ To ensure optimal performance when setting up Open-WebUI and Ollama on Windows S
    - At least 16GB of RAM, but preferably 32GB or more for smoother operation and faster model loading times.
      - 0ri0n: 32 GB
 
-4. **NVIDIA Drivers**:
-   - The latest NVIDIA drivers installed to leverage GPU acceleration effectively in Docker containers.
-
 This setup will help you run Open-WebUI and Ollama effectively on your system.
 
 > By choosing Windows 11 and relying on WSL (Windows Subsystem for Linux), we are leveraging the popularity and ease of use of a Windows environment while harnessing the power of Linux, simply because this setup is popular and convenient for highlighting and testing out the capabilities of WSL.
