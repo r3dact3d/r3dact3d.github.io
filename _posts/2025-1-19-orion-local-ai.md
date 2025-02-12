@@ -55,11 +55,7 @@ _My Home Lab Architecture for Operation 0ri0n_
 
 ### Technical Document: Setting Up Open-WebUI and Ollama
 
-#### Hardware Thoughts
-
-Certainly! Here's how you can present the hardware recommendations in Markdown format:
-
-### Recommended Hardware Components
+#### Recommended Hardware Components
 
 To ensure optimal performance when setting up Open-WebUI and Ollama on Windows Subsystem for Linux (WSL) with GPU support, consider the following hardware components:
 
