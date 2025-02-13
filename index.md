@@ -7,6 +7,18 @@ title: Access Granted
 
 Hi, I’m Brady T, a Red Hat Architect with a passion for the outdoors and amateur radio. On this site, you’ll find a collection of my technical articles, blog posts, and other content.
 
+## My Skills
+
+I specialize in:
+- Designing, implementing, and maintaining Red Hat Linux-based solutions.
+- Deploying and managing Red Hat Enterprise Linux (RHEL) systems and associated infrastructure.
+- Container orchestration tools such as Kubernetes, OpenShift, and CloudForms.
+- Architecting cloud platforms like AWS, Google Cloud Platform (GCP), Microsoft Azure, and VMware vSphere.
+- Python, Ansible, Puppet, Chef, or other configuration management tools for automation purposes.
+- Problem-solving and collaborating in a team.
+- Documenting, presenting, and training others on solutions.
+- DevOps practices, including CI/CD pipelines, GitOps methodologies, and infrastructure as code (IaC) principles.
+
 ## Featured Projects
 
 Here are some of my notable projects:
@@ -39,13 +51,6 @@ Here are some of my notable projects:
 
 > [Blog Home](https://r3dact3d.github.io/posts)
 
-## My Skills
-
-I specialize in:
-- Markdown: Efficiently managing notes and documentation.
-- Git: Seamlessly tracking changes and collaborating with teams.
-- Jinja2 Templating: Dynamically rendering content for dynamic web pages.
-- VSCode Development: A powerful integrated development environment.
 
 ## Personal Interests
 
