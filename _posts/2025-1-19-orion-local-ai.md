@@ -124,6 +124,8 @@ For a quick test, try this command to see how much GPU RAM is being utilized:
 $ nvidia-smi -l
 ```
 
+Check out [Ollama](https://ollama.com/download) and [Open WebUI](https://openwebui.com/) for more specifics.
+
 #### **Set Up Static IP on 0ri0n**:
 
 I configured a static IP, but this is not necessary, especially if you already have DNS or DHCP implemented in your network.
@@ -223,6 +225,8 @@ EOF
 
 > NOTE: Update the code to reflect the correct IP address.
 
+For more info on [Nginx](https://nginx.org/)
+
 #### **CloudFlare Tunnel**:
 
 To access my local model remotely or when away from my home network, I created a CloudFlare zero-trust tunnel. After creating an account and setting up a DNS record, I was given this Docker command with a token to run.
@@ -232,6 +236,8 @@ docker run -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token *
 ```
 
 _This command runs the Cloudflare Docker container in detached mode, enabling a tunnel to route traffic through your machine to services running inside WSL._
+
+Visit [Cloudflare](https://dash.cloudflare.com/) for more info on Zero-Trust Tunnels
 
 ## Pausing Thoughts
 
