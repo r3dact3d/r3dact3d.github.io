@@ -42,7 +42,7 @@ This pattern provisions infrastructure and integrates GitHub Actions for streaml
 
 Running LLMs locally enhances data privacy, improves performance due to reduced network latency, and offers greater flexibility for customization and integration with on-premises systems. This setup also provides better resource control and can be cost-effective, especially for organizations with existing hardware infrastructure.
 
-![0ri0n Local AI](../images/0ri0n_local_ai.png)
+![0ri0n Local AI](/images/0ri0n_local_ai.png)
 
 _My Home Lab Architecture for Operation 0ri0n_
 
