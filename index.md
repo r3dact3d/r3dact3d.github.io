@@ -10,14 +10,16 @@ Hi, I’m Brady T, a Red Hat Architect with a passion for the outdoors and amate
 ## My Skills
 
 I specialize in:
-- Designing, implementing, and maintaining Red Hat Linux-based solutions.
+
+- Designing, implementing, and maintaining Red Hat based solutions.
 - Deploying and managing Red Hat Enterprise Linux (RHEL) systems and associated infrastructure.
-- Container orchestration tools such as Kubernetes, OpenShift, and CloudForms.
-- Architecting cloud platforms like AWS, Google Cloud Platform (GCP), Microsoft Azure, and VMware vSphere.
+- Container orchestration tools such as Kubernetes and OpenShift.
+- Architecting cloud platforms like AWS, Google Cloud Platform (GCP), Microsoft Azure, and Hybrid Infrastructures.
 - Python, Ansible, Puppet, Chef, or other configuration management tools for automation purposes.
 - Problem-solving and collaborating in a team.
 - Documenting, presenting, and training others on solutions.
 - DevOps practices, including CI/CD pipelines, GitOps methodologies, and infrastructure as code (IaC) principles.
+- API integration and Data **manipulation** and Generative AI
 
 ## Featured Projects
 
@@ -67,16 +69,16 @@ Stargazing and capturing the beauty of our universe through astrophotography is 
 ### Beekeeping
 Beekeeping connects me with nature and the intricate world of bees. It's a rewarding hobby that not only provides me with fresh honey but also helps support local ecosystems.
 
-#### For the curious
+### For the curious
 
-* [Link to Second Brain project](https://r3dact3d.github.io/brain-dump/)
+> [Link to Second Brain project](https://r3dact3d.github.io/brain-dump/)
 
 ## Contact Me
 
 Feel free to reach out via email or social media:
 
-- **Email:** [brady.thompson@gmail.com](mailto:brady.thompson@gmail.com)
-- **LinkedIn:** [www.linkedin.com/in/brady-thompson](https://www.linkedin.com/in/brady-thompson-redactedtech/)
+> **Email:** [brady.thompson@gmail.com](mailto:brady.thompson@gmail.com \
+> **LinkedIn:** [www.linkedin.com/in/brady-thompson](https://www.linkedin.com/in/brady-thompson-redactedtech/)
 
 
 
