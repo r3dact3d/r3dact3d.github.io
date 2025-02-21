@@ -1,5 +1,5 @@
 ---
-title: "Enahnce Productivity with CLI AI"
+title: "Enahnce CLI Productivity with AI"
 hidden: true
 excerpt_separator: "<!--more-->"
 categories:
