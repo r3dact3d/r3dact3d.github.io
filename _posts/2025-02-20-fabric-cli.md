@@ -27,18 +27,16 @@ It simplifies the process of integrating large language models (LLMs) into comma
 Purpose and Key Features
 -------------
 
-ts primary goal is to make AI tools more accessible to the broader community, particularly developers, system administrators, and other command-line heroes who want to integrate Generative AI into their workflows efficiently.
-
-> Think of getting a deep summary of a youtube video that you are interested in, but don't have the cycles to watch.
->  Checkout the [Extract Wisdom](https://github.com/danielmiessler/fabric/tree/main/patterns/extract_wisdom) and [Extract Instructions](https://github.com/danielmiessler/fabric/tree/main/patterns/extract_instructions) patterns.
-> 
-> Here is an example output from the Extract Wisdom pattern used on the Fabric Origin Story Youtube video [[fabric-origin]]
-
+The primary goal is to make AI tools more accessible to the broader community, particularly developers, system administrators, and other command-line heroes who want to integrate Generative AI into their workflows efficiently.
+ 
 - **Simplification**: Easy for users to leverage LLMs without having to develop their own frameworks or wrappers.
 - **Modularity**: Designed as a collection of modular patterns, allowing users to integrate various LLMs seamlessly into their command-line workflows.
 - **Crowdsourced Prompts**: Diverse set of AI system prompts contributed by the community.
 
-> Checkout my custom **Patterns** and **Prompts** in my [Second Brain](https://r3dact3d.github.io/brain-dump/)
+> Think of getting a deep summary of a youtube video that you are interested in, but don't have the cycles to watch.
+>  Checkout the [Extract Wisdom](https://github.com/danielmiessler/fabric/tree/main/patterns/extract_wisdom) and [Extract Instructions](https://github.com/danielmiessler/fabric/tree/main/patterns/extract_instructions) patterns.
+>
+> Here is an example output from the Extract Wisdom pattern used on the Fabric Origin Story Youtube video [fabrid-origin](https://r3dact3d.github.io/brain-dump/Fabric/fabric-origin)
 
 * * *
 
@@ -53,19 +51,11 @@ ts primary goal is to make AI tools more accessible to the broader community, pa
 
 ### 📈 \[Installation\]
 
-his guide will walk you through each step with detailed commands and ensure Fabric is ready for use in your command-line workflows on a Fedora 41 laptop.
+This guide will walk you through each step with detailed commands and ensure Fabric is ready for use in your command-line workflows on a Fedora 41 laptop.
 
 - [Install and Setup Guide](https://r3dact3d.github.io/brain-dump/Ideas/Fabric%20Install%20Setup%20Guide)
   
-### Getting Started with Fabric
-
-Let's scrape a blog post landing page and see what the enrich_blog_post pattern returns.
-
-```bash
-fabric -p enrich_blog_post -o foamy-stuff/dump.md -u https://r3dact3d.github.io
-```
-
-> The output will be saved as a new markdown file in my Foam directory and synced with GitHub.  Essentially adding to my "world of text" and growing my second brain.
+  * * *
 
 ### Real-World Use Cases
 
@@ -80,9 +70,10 @@ Now, instead of taking potentially 6+ hours to meet with the customer or team, c
 I can do in just moments after the meeting is ended and the transcript is automatically created using a small 8b parameter model that is trained and prompted for this specific task, all while keep the data secure and local.
 
 > Here is an example using a community meeting transcript
+>
 > ```bash
 > $ cat community_improvements_initative_march.txt | fabric --stream --pattern summarize_meeting
-
+>
 > ```markdown
 > * Meeting Transcript: Community Improvements Initiative
 > * Date: March 22, 2023
