@@ -1,5 +1,5 @@
 ---
-title: "Enahnce CLI Productivity with AI"
+title: "Enhance CLI Productivity with AI"
 hidden: true
 excerpt_separator: "<!--more-->"
 categories:
@@ -63,11 +63,11 @@ This guide will walk you through each step with detailed commands and ensure Fab
   
 I am often facilitating working sessions and doing discovery at the same time and sometimes these meetings can last 2 or 3 hours. 
 
-I've learned that I miss a lot of facts and important information in real time, after either re-watching or reading through the meeting transcript afterwards, because I'm usually making plans or recommendations for the customer.
+I've learned that I miss a lot of facts and important information in real-time, after either re-watching or reading through the meeting transcript afterwards, because I'm usually making plans or recommendations for the customer.
 
 Now, instead of taking potentially 6+ hours to meet with the customer or team, collate all the data that was taken in, and reply with at least a summary. 
 
-I can do in just moments after the meeting is ended and the transcript is automatically created using a small 8b parameter model that is trained and prompted for this specific task, all while keep the data secure and local.
+I can do this in just moments after the meeting is ended and the transcript is automatically created using a small 8b parameter model that is trained and prompted for this specific task, all while keeping the data secure and local.
 
 > Here is an example using a community meeting transcript
 >
@@ -108,9 +108,9 @@ I can do in just moments after the meeting is ended and the transcript is automa
   
 #### Enhancing Workflow Efficiency
 
-I can continue to leverage Fabric and my local language model to further this workflow's efficiency by using pipes, something in every command-line heroe's toolkit.
+I can continue to leverage Fabric and my local language model to further this workflow's efficiency by using pipes, something in every command-line hero's toolkit.
 
-Taking the output from the previous models response and generative summarization of the meeting transcript, we can pipe to another **pattern** and or even another LLM all together. 
+Taking the output from the previous model's response and generative summarization of the meeting transcript, we can pipe to another **pattern** and or even another LLM all together. 
 
 > Here I'm going to summarize the meeting transcript, then pass it to another pattern that will create a formal email and save it as a markdown file.
 > 
@@ -152,11 +152,11 @@ Taking the output from the previous models response and generative summarization
 
 This is a very simple example, however, I think we can all see the power built-in to this workflow.  The ability to chain or pipe both input and output to different Generative AI models, but we can also, apply different patterns or prompts to individual models and datasets.
 
-Imagine a workflow that could pick up any file that lands in a specific directory.  Could be a text note document, a website link, an image, or youtube video.  A job picks up this file and applies a pattern to process the data using Fabric and a LLM that outputs multple data files that represent user stories, tasks and instructions, deep analysis on the content of the data, or even just a description. Multiple outputs with multiple pipe options to enhance or extend the workflow and essentially the manipulation of the data using Generative AI.
+Imagine a workflow that could pick up any file that lands in a specific directory.  Could be a text note document, a website link, an image, or youtube video.  A job picks up this file and applies a pattern to process the data using Fabric and a LLM that outputs multiple data files that represent user stories, tasks and instructions, deep analysis on the content of the data, or even just a description. Multiple outputs with multiple pipe options to enhance or extend the workflow and essentially the manipulation of the data using Generative AI.
 
 > I invite you to explore some of these patterns I've been creating and testing.
 > [Fabric Patterns](https://r3dact3d.github.io/brain-dump/AI/Fabric%20Patterns)
 
 ### Conclusion
 
-The intent is to simplify the integration of Generative AI LLMs into command-line workflows, making it more accessible and practical for developers, system administrators, and other [command-line heroes](https://www.redhat.com/en/command-line-heroes). With Youtube integration, options for URL scraping, and crowdsourced system prompts ensure that users can benefit from a wide range of AI capabilities without extensive development efforts.
+The intent is to simplify the integration of Generative AI LLMs into command-line workflows, making it more accessible and practical for developers, system administrators, and other command-line heroes. With Youtube integration, options for URL scraping, and crowdsourced system prompts ensure that users can benefit from a wide range of AI capabilities without extensive development efforts.
