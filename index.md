@@ -77,7 +77,7 @@ Beekeeping connects me with nature and the intricate world of bees. It's a rewar
 
 Feel free to reach out via email or social media:
 
-> **Email:** [brady.thompson@gmail.com](mailto:brady.thompson@gmail.com \
+> **Email:** [brady.thompson@gmail.com](mailto:brady.thompson@gmail.com)
 > **LinkedIn:** [www.linkedin.com/in/brady-thompson](https://www.linkedin.com/in/brady-thompson-redactedtech/)
 
 
