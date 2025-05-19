@@ -20,6 +20,10 @@ Install date: May1, 2022
 
 ## Setup
 
+![](../images/ambient-windmill-close.jpg)
+
+## Ambient Network
+
 ![](../images/ambient-tiles.png)
 
 ![](../images/ambient-alerts-oob.png)
@@ -32,6 +36,8 @@ Install date: May1, 2022
 
 ![](../images/ambient-devices-oob.png)
 
+## Home Assistant
+
 [Home Assistenat/Ambient Integration](https://www.home-assistant.io/integrations/ambient_network/)
 
 ![](../images/home-assistant-add-hub.png)
@@ -40,3 +46,4 @@ Install date: May1, 2022
 
 ![](../images/home-assistant-ambient-entities.png)
 
+![](../images/ambient-windmill-bird.jpg)
