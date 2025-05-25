@@ -29,23 +29,23 @@ $ chmod -R a+rwX rhaai-cache/
 
 Following the documentation, I was able to start the Red Hat AI Inference Server and started by testing with a smaller 1B model with a 2048 context length, just to be sure that size wasn't an issue.
 
-![](../images/rhaiis_start.png)
+![](/images/rhaiis_start.png)
 
 Here we can see the model loaded and the Inference Server has started and the results of a few tests to validate the Inference Server is responding as expected.
-![](../images/rhaiis_test.png)
+![](/images/rhaiis_test.png)
 
 ## Open WebUI
 
 Since the Red Hat AI Inference Server follows the OpenAI API standards, the connection can be added in Open WebUI GUI Admin Panel > Settings > Connections
 
 Red Hat AI Inference Server and Open WebUI are both running as containers on the same host, so configure the IP:port and token details.
-![](../images/rhaiis_openwebui.png)
+![](/images/rhaiis_openwebui.png)
 
 In a new chat, I seleted the Red Hat model being served by the Red Hat AI Inference Server and asked a simple question for testing.
-![](../images/rhaiis_chat_openwebui.png)
+![](/images/rhaiis_chat_openwebui.png)
 
 In the output from the infrerence server we can see the same chat comnpletion details along with the prompt for the chat.
-![](../images/rhaiis_chat_local.png)
+![](/images/rhaiis_chat_local.png)
 
 Success! Now I have a connection to Red Hat AI Inference Server and all the models my GPU can handle. This means, I can use my Knowledge, Tools, and Prompts already defined in Open WebUI with any Model being served by Red Hat AI Inference Server while also taking advantage of the features it has to offer.
 
