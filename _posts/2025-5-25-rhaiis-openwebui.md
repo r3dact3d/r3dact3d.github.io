@@ -21,7 +21,7 @@ With the recent announcement of Red Hat's new stand-alone [AI Inference Server](
 
 ### Simple look into LLM Compressor
 
-My initial interest in LLM Compressor was sparked by the promise of efficiency gains. Based on the [LLM Compressor Docs](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html-single/llm_compressor/index), it is an **open source library** that incorporates cutting-edge research to leverage **quantization, sparsity, and general compression techniques** to improve generative AI models in all areas, while maintaining accuracy. It integrates natively with Hugging Face and vLLM.
+My initial interest in LLM Compressor was sparked by the promise of efficiency gains. Based on the [LLM Compressor Docs](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html-single/llm_compressor/index), it is an **open source library** that incorporates cutting-edge research to leverage **quantization, sparsity, and general compression techniques** to improve generative AI models in all areas, while maintaining accuracy.
 
 > It's important to note that LLM Compressor is currently designated as a **Developer Preview feature**.  It's provided for early access and feedback.
 
