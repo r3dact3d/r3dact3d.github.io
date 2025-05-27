@@ -75,7 +75,7 @@ These models can be accessed differently depending on whether you're using RHAII
 
 ### Understanding Server Configuration
 
-RHAIIS provides an **OpenAI-compatible API server**. Its behavior can be controlled using numerous server arguments when running the container. Some of the key arguments highlighted in the [vLLM Server Argurment documentation](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html-single/vllm_server_arguments/index) include:
+RHAIIS provides an **OpenAI-compatible API server**. Its behavior can be controlled using numerous server arguments when running the container. Some of the key arguments highlighted in the [vLLM Server Argument documentation](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html-single/vllm_server_arguments/index) include:
 
 *   `--model`: Specifies the name or path of the Hugging Face model to use.
 *   `--quantization` or `-q`: Specifies the method used to quantize the weights, with options like `awq`, `gptq`, `fp8`, `bitsandbytes`, and `compressed-tensors` .
@@ -108,9 +108,9 @@ While I validated that the server was responding, the [Getting Started documenta
 
 ### Troubleshooting Common Issues
 
-Setting up and inference server can involve troubleshooting. The [Getting Started documentation](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html/getting_started/troubleshooting_getting-started) has a troubleshooting section that covers common issues related to model loading, memory, networking, and GPU drivers.
+Setting up an inference server can involve troubleshooting. The [Getting Started documentation](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html/getting_started/troubleshooting_getting-started) has a troubleshooting section that covers common issues related to model loading, memory, networking, and GPU drivers.
 
-*   **Model Loading Errors:** I would start by evaluating the GPU memory and the size of the LLM.  Specifically the context length as this can vary and can be reduce a lot of times for efficiency. 
+*   **Model Loading Errors:** I would start by evaluating the GPU memory and the size of the LLM.  Specifically the context length as this can vary and can be reduced a lot of times for efficiency. 
 *   For persistent issues, **enabling debug logging** by exporting `VLLM_LOGGING_LEVEL=DEBUG` is helpful to check detailed logs.
 
 > Often, reducing the `--max-model-len` will help, unless you have a use-case that requires a very large context.
