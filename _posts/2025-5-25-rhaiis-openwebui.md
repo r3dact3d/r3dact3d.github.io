@@ -21,11 +21,12 @@ With the recent announcement of Red Hat's new stand-alone [AI Inference Server](
 
 ### Simple look into LLM Compressor
 
-My initial interest in LLM Compressor was sparked by the promise of efficiency gains. Based on the [LLM Compressor Docs](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html-single/llm_compressor/index), it is an **open source library** that incorporates cutting-edge research to leverage **quantization, sparsity, and general compression techniques** to improve generative AI model efficiency, scalability, and performance, while aiming to maintain accuracy. It integrates natively with Hugging Face and vLLM, and supports the `compressed-tensors` model format.
+My initial interest in LLM Compressor was sparked by the promise of efficiency gains. Based on the [LLM Compressor Docs](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html-single/llm_compressor/index), it is an **open source library** that incorporates cutting-edge research to leverage **quantization, sparsity, and general compression techniques** to improve generative AI models in all areas, while maintaining accuracy. It integrates natively with Hugging Face and vLLM.
 
-> It's important to note that LLM Compressor is currently designated as a **Developer Preview feature**.  It's provided for early access and feedback. 
+> It's important to note that LLM Compressor is currently designated as a **Developer Preview feature**.  It's provided for early access and feedback.
 
 Compression methodologies supported include:
+
 *   **Quantization:** Converts model weights and activations to lower-bit formats like `int8` to reduce memory usage.
 *   **Sparsity:** Sets a portion of model weights to zero.
 *   **Compression:** Shrinks the saved model file size.
@@ -37,7 +38,7 @@ These methods can be used together for more efficient deployment on resource-lim
 [Getting Started](https://docs.redhat.com/en/documentation/red_hat_ai_inference_server/3.0/html/getting_started/serving-and-inferencing-rhaiis_getting-started) with RHAIIS involves serving and inferencing an LLM using the container image. The prerequisites include having **Podman or Docker installed**, access to a **Linux server with NVIDIA or AMD GPUs** and necessary drivers (in my case, the NVIDIA drivers and NVIDIA Container Toolkit), access to `registry.redhat.io`, and a [**Hugging Face token**](https://huggingface.co/).
 
 Current design of Blinker19 Lab serving RHAIIS via Open WebUI.
-![](../images/rhaiis_lab_design.png)
+![](/images/rhaiis_lab_design.png)
 
 I am already serving LLMs with Ollama locally and integrated with Open WebUI to really get the most out of Ollama and to provide some LLMs as a service to friends and family. This means, I already had the NVIDIA drivers installed.  You can see more on that project on my blog at [Ori0n: My Local Private AI](https://r3dact3d.github.io/home%20lab/2025/01/19/orion-local-ai.html). 
 
