@@ -1,6 +1,5 @@
 ---
 title: "0ri0n: My Local Private AI"
-hidden: true
 excerpt_separator: "<!--more-->"
 github_comments_issueid: "2"
 categories:

@@ -1,6 +1,7 @@
 ---
 title: "Automate Publishing and Promoting Content Views in Red Hat Satellite"
 published: true
+excerpt_separator: "<!--more-->"
 date: 2019-12-03 12:30:00
 categories: 
   - Red Hat

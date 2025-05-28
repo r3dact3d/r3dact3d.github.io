@@ -2,7 +2,6 @@
 title: "Expedition 72 - Series 23 Holidays 2024"
 excerpt_separator: "<!--more-->"
 github_comments_issueid: "8"
-hidden: true
 categories:
   - Amateur Radio
 tags:
