@@ -21,7 +21,7 @@ It simplifies the process of integrating large language models (LLMs) into comma
 > Fabric was created by Daniel Miessler in January 2024.
 > - [Fabric GitHub](https://github.com/danielmiessler/fabric)
 > - [Fabric Origin Story](https://danielmiessler.com/blog/fabric-origin-story)
-
+<!--more-->
 * * *
 
 Purpose and Key Features

@@ -15,6 +15,7 @@ tags:
 I am using a combination of tools to monitor, temporarily ban, and block problem IPs that attempt to brute force SSH on my Digital Ocean, Ubuntu server. Then allow SSH, so I can manage my server.
 
 First, I installed ufw to easily create firewall rules. Below commands allow me to show all available options. You can list pre-configured apps that I can allow or block. I can also get more info on a specific app.
+<!--more-->
 
 ```bash
 sudo apt-get install ufw

@@ -12,6 +12,7 @@ If your site or service has any interaction with customer data, especially credi
 
 ##### Find out current complete version info
 ![opensslVersionA](/images/openSSL_versionA.png)
+<!--more-->
 
 Notice the **OPENSSLDIR** line near the end of the output, that is where my openSSL working directory is located.
 ![SSLdirStruct](/images/SSLdirStruct.png)

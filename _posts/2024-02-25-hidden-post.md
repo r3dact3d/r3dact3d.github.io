@@ -26,6 +26,7 @@ Quick Summary
 **Outcome**: Summarize the result or main takeaway.
 
 * * *
+<!--more-->
 
 🛠 \[Section 1: Setup or Context\]
 ----------------------------------

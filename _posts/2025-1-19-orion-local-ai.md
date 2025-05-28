@@ -21,6 +21,7 @@ Recently, I found time to explore a new area and decided to delve into Data Scie
 Using public and free AI services like ChatGPT, DeepSeek, and Claude requires awareness of potential privacy and data risks. These platforms may collect user input for training, leading to unintentional sharing of sensitive information. Additionally, their security measures might not be sufficient to prevent unauthorized access or data breaches.
 
 > Users should exercise caution when providing personal or confidential details and consider best practices such as encrypting sensitive data and regularly reviewing privacy policies.
+<!--more-->
 
 Here are a few vendors that offer open-source models to the public:
 

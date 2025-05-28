@@ -12,6 +12,7 @@ tags:
 ---
 
 Recently, I have been working with Red Hat's system mangement solution, a product called Satellite.  If you want more information on what Satellite is or what it can do for you and your organization, please read Crossvale's [data sheet.](https://crossvale.com/satellite/)  However, the purpose of this post is to document the process I used to automate the publishing of Content Views and then automate the promotion of those Content View versions to the first step in the Lifecycle Environment path. When a product offers, not only a web browser interface(GUI), but also a CLI and API for installation, cofiguration, and mangement tasks, the possiblilities are endless to what solutions can be achieved.
+<!--more-->
 
 ### The Problem
 
