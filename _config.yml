@@ -23,9 +23,12 @@ google_fonts:
     
 #about-author: Consulting architect and Linux engineer by trade, but also very passionate about the outdoors and promoting the art of amateur radio.
 
+# Set this to a github repository to be used to host comments.
+github_comments_repository: r3dact3d/blog-comments
+
 # Disqus
-disqus:
-  shortname: radio-in-the-wild # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+#disqus:
+#  shortname: radio-in-the-wild # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
 twitter:
   username: RedactedTech
 

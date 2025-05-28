@@ -1,6 +1,7 @@
 ---
 title: "Red Hat AI Inference Server with Open WebUI"
 excerpt_separator: "<!--more-->"
+github_comments_issueid: "1"
 categories:
   - Home Lab
   - Red Hat
