@@ -1,6 +1,7 @@
 ---
 title: "DIY: 6 Meter Coax Antenna"
 excerpt_separator: "<!--more-->"
+github_comments_issueid: "4"
 categories:
   - Amateur Radio
 tags:

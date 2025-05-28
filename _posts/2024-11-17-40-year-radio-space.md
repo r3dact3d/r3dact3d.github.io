@@ -1,6 +1,7 @@
 ---
 title: "40 Years of Amateur Radio on Human SpaceFlight"
 excerpt_separator: "<!--more-->"
+github_comments_issueid: "6"
 categories:
   - Amateur Radio
 tags:

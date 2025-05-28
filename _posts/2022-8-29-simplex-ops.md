@@ -1,6 +1,7 @@
 ---
 title: "Simplex Ops: QTH Station"
 excerpt_separator: "<!--more-->"
+github_comments_issueid: "3"
 categories:
   - Amateur Radio
 tags:
