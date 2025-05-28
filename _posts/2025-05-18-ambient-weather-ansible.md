@@ -2,6 +2,7 @@
 title: "WIP: Ambient Weather Station features and LLM integration with Ansible"
 hidden: true
 excerpt_separator: "<!--more-->"
+github_comments_issueid: "9"
 categories:
   - Home Lab
 tags:

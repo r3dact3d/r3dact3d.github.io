@@ -2,6 +2,7 @@
 title: "Enhance CLI Productivity with AI"
 hidden: true
 excerpt_separator: "<!--more-->"
+github_comments_issueid: "9"
 categories:
   - Amateur Radio
 tags:
